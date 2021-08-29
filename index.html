@@ -2,14 +2,118 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beacon Innernet</title>
+    <title>Beacon Community Network</title>
+
+    <style>
+     body {
+       font-family: arial;
+     }
+
+     header {
+       background-color: rgb(29, 155, 240);
+       color: rgba(255, 255, 255, 0.95);
+     }
+
+     h1 {
+       padding: 0.4rem 1rem;
+     }
+
+     .url-example {
+
+       font-style: italic;
+     }
+
+    </style>
+
+
+    <script>
+     function todoify(el) {
+       const wrapper = document.createElement("div")
+       wrapper.style.position = "relative"
+
+       const overlay = document.createElement("div")
+       overlay.style.position = "absolute"
+       overlay.style.top = 0;
+       overlay.style.right = 0;
+       overlay.style.bottom = 0;
+       overlay.style.left = 0;
+       overlay.style.backgroundColor = "rgba(255, 255, 255, 0.8)"
+       overlay.style.display = "flex"
+
+       const todo = document.createElement("div")
+       todo.style.margin = "auto 5rem"
+       todo.style.fontSize = "2.5rem"
+       todo.style.fontWeight = "bold"
+       todo.style.color = "rgba(0, 0, 0, 0.2)"
+       todo.style.letterSpacing = "0.2rem"
+       todo.innerHTML = "coming soon"
+
+       el.parentNode.appendChild(wrapper)
+       el.remove()
+       wrapper.appendChild(el)
+       overlay.appendChild(todo)
+       wrapper.appendChild(overlay)
+     }
+
+     document.addEventListener("DOMContentLoaded", () => {
+       document.querySelectorAll("ol").forEach(todoify)
+     })
+    </script>
+
+
   </head>
+
   <body>
-    <h1>Beacon NY Innernet</h1>
+    <header>
+      <h1>Beacon Community Network</h1>
+    </header>
+
     <section>
       <h2>About</h2>
-      A work in progress...
+      <p>
+        beaconny.net is a community-run digital services platform for Beacon, NY and neighboring communities.
+        <br>
+        This site is currently served by <a href="https://pages.github.com/">GitHub Pages</a>.
+        The source code is <a href="https://github.com/beaconny-net/beaconny.net">here</a>.
+      </p>
     </section>
+
+    <section>
+      <h2>Personal Websites</h2>
+      <p>
+        Have your own personal website at: <span class="url-example">https://beaconny.net/sites/<strong>your-name</strong></span>
+        <ol>
+          <li>
+            <a href="/pages/personal-website-how-to">Learn more about the Personal Websites</a>
+          </li>
+          <li>
+            <a href="/pages/personal-website-how-to">Read the Personal Website How-to Guide</a>
+          </li>
+          <li>
+            <a href="/sites/">Browse the sites</a>
+          </li>
+        </ol>
+      </p>
+    </section>
+
+    <section>
+      <h2>Community Pages</h2>
+      <p>
+        Create a community information page at: <span class="url-example">https://beaconny.net/pages/<strong>page-name</strong></span>
+        <ol>
+          <li>
+            <a href="/pages/community-page-how-to">Learn more about Community Pages</a>
+          </li>
+          <li>
+            <a href="/pages/community-page-how-to">Read the Community Pages How-to Guide</a>
+          </li>
+          <li>
+            <a href="/pages/">Browse the pages</a>
+          </li>
+        </ol>
+      </p>
+    </section>
+
     <section>
       <h2>Forums</h2>
       <ul>
@@ -20,5 +124,6 @@
         </li>
       </ul>
     </section>
+
   </body>
 </html>
