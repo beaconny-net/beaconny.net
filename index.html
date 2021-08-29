@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -22,44 +24,7 @@
 
        font-style: italic;
      }
-
     </style>
-
-
-    <script>
-     function todoify(el) {
-       const wrapper = document.createElement("div")
-       wrapper.style.position = "relative"
-
-       const overlay = document.createElement("div")
-       overlay.style.position = "absolute"
-       overlay.style.top = 0;
-       overlay.style.right = 0;
-       overlay.style.bottom = 0;
-       overlay.style.left = 0;
-       overlay.style.backgroundColor = "rgba(255, 255, 255, 0.85)"
-       overlay.style.display = "flex"
-
-       const todo = document.createElement("div")
-       todo.style.margin = "auto 0 auto 3rem"
-       todo.style.fontSize = "2.5rem"
-       todo.style.fontWeight = "bold"
-       todo.style.color = "rgba(0, 0, 0, 0.2)"
-       todo.style.letterSpacing = "0.2rem"
-       todo.innerHTML = "coming soon"
-
-       el.parentNode.appendChild(wrapper)
-       el.remove()
-       wrapper.appendChild(el)
-       overlay.appendChild(todo)
-       wrapper.appendChild(overlay)
-     }
-
-     document.addEventListener("DOMContentLoaded", () => {
-       document.querySelectorAll("ol").forEach(todoify)
-     })
-    </script>
-
 
   </head>
 
@@ -68,62 +33,55 @@
       <h1>Beacon Community Network</h1>
     </header>
 
-    <section>
-      <h2>About</h2>
+    <main>
       <p>
-        beaconny.net is a community-run digital services platform for Beacon, NY and neighboring communities.
-        <br>
-        This site is currently served by <a href="https://pages.github.com/">GitHub Pages</a>.
-        The source code is <a href="https://github.com/beaconny-net/beaconny.net">here</a>.
+        A community-run digital services platform for Beacon, NY and neighboring communities.
       </p>
-    </section>
 
-    <section>
-      <h2>Personal Websites</h2>
-      <p>
-        Have your own personal website at: <span class="url-example">https://beaconny.net/sites/<strong>your-name</strong></span>
-        <ol>
-          <li>
-            <a href="/pages/personal-website-how-to">Learn more about the Personal Websites</a>
-          </li>
-          <li>
-            <a href="/pages/personal-website-how-to">Read the Personal Website How-to Guide</a>
-          </li>
-          <li>
-            <a href="/sites/">Browse the sites</a>
-          </li>
-        </ol>
-      </p>
-    </section>
+      <aside>
+        <em>
+          Looking for the <a href="https://beaconny.gov">Official City of Beacon Website</a>? &larr; click there
+        </em>
+      </aside>
 
-    <section>
-      <h2>Community Pages</h2>
-      <p>
-        Create a community information page at: <span class="url-example">https://beaconny.net/pages/<strong>page-name</strong></span>
-        <ol>
-          <li>
-            <a href="/pages/community-page-how-to">Learn more about Community Pages</a>
-          </li>
-          <li>
-            <a href="/pages/community-page-how-to">Read the Community Pages How-to Guide</a>
-          </li>
-          <li>
-            <a href="/pages/">Browse the pages</a>
-          </li>
-        </ol>
-      </p>
-    </section>
+      <section>
+        <h2>About</h2>
+        <p>
+          beaconny.net is maintained by members of the <a href="http://computing.beaconny.net">Beacon Computing Club</a> as a place for local digital content and platform for web technology education and experimentation.
+        </p>
+      </section>
 
-    <section>
-      <h2>Forums</h2>
-      <ul>
-        <li>
-          <a href="http://computing.beaconny.net">
-            Computing Club
-          </a>
-        </li>
-      </ul>
-    </section>
+      <section>
+        <h2>Forums</h2>
+        <ul>
+          <li>
+            <a href="http://computing.beaconny.net">
+              Computing Club
+            </a>
+          </li>
+        </ul>
+        <p>
+          Our discussion forums, which are more like standalone social media sites, are powered by the free and open-source <a href="https://www.forem.com/">Forem</a> application.
+          <br>
+          If you'd like to start your own forum, let us know at: <a href="mailto:admin@beaconny.net">forums@beaconny.net</a>
+        </p>
+        <ul>
+          <li>
+            We'll provide a free subdomain: <span class="url-example"><strong>your-forum-name</strong>.beaconny.net</span>
+          </li>
+          <li>
+            You'll host the application in your own <a href="https://www.digitalocean.com/">DigitalOcean</a> account (which we'll help you set up) at a cost of about $15/month.
+          </li>
+          <li>
+            No support is provided, but you can ask for help in the great community over at the <a href="https://forem.dev">official Forem site</a>, or in our <a href="http://computing.beaconny.net">Computing Club</a>.
+          </li>
+        </ul>
+        <p>
+          Alternatively, Forem offers their own <a href="https://www.forem.com/get-started">cloud-hosted version</a> that takes care of all the technical details and includes support, and we can give you the subdomain.
+        </p>
+      </section>
+
+    </main>
 
   </body>
 </html>
