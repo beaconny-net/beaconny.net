@@ -2,7 +2,7 @@
 description: Beacon Community Network home page
 ---
 
-<h1>Beacon Community Network</h1>
+# Beacon Community Network
 
 A community-run digital services platform for Beacon, NY and neighboring communities.
 
