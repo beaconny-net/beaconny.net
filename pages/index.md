@@ -1,11 +1,9 @@
 ---
-description: Beacon Community Network -> Pages
+description: User Pages Directory
 ---
 
-# [Beacon Community Network](/) -> Pages
-
-## Pages
+## [Beacon Community Network](/) -> Pages
 
 - [beaconny.net](beaconny.net)
 
-  - [Start your own forum](beaconny.net/start-a-new-forum.md)
+  - [How to create your own forum](beaconny.net/start-a-new-forum)
