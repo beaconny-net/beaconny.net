@@ -2,7 +2,7 @@
 description: User Pages Directory
 ---
 
-## [Beacon Community Network](/) -> Pages
+## [Beacon Community Network](/) > Pages
 
 - [beaconny.net](beaconny.net)
 

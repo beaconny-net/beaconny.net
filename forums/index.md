@@ -2,7 +2,7 @@
 description: Forums Directory
 ---
 
-## [Beacon Community Network](/) -> Forums
+## [Beacon Community Network](/) > Forums
 
 _[Learn how to create your own forum](/pages/beaconny.net/start-a-new-forum)!_
 

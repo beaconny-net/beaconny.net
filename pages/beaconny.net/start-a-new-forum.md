@@ -2,7 +2,7 @@
 description: How to create your own forum
 ---
 
-## [Beacon Community Network](/) -> [Pages](/pages) -> [beaconny.net](/pages/beaconny.net) -> How to create your own forum
+## [Beacon Community Network](/) > [Pages](/pages) > [beaconny.net](/pages/beaconny.net) > How to create your own forum
 
 
 Our discussion forums are powered by the free and open-source <a href="https://www.forem.com/">Forem</a> application.
