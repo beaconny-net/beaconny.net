@@ -2,7 +2,11 @@
 description: Beacon Community Network home page
 ---
 
+![splash](https://user-images.githubusercontent.com/585182/162760057-c2af20f1-3e05-4725-be37-3e0baa24facf.png)
+
+
 # Beacon Community Network
+
 
 A community-run digital services platform for Beacon, NY and neighboring communities.
 
