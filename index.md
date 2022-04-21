@@ -8,7 +8,7 @@ description: Beacon Community Network home page
 # Beacon Community Network
 
 
-A community-run digital services platform for Beacon, NY and neighboring communities.
+A community-run digital services platform for Beacon, NY.
 
 _Looking for the [Official City of Beacon Website](https://beaconny.gov)? &larr; click there_
 
