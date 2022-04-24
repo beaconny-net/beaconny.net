@@ -33,11 +33,15 @@ Given the nature of the involved equipment (e.g. CNC router, laser cutter, etc.)
   - fun, interactive things for visitors to engage with
   - events
 
-### Collateral Usage
+### Collateral Applications
 
 #### Community Cloud
 
 Provide cloud computing servers that can be accessed for free by the community to provide a local data center for learning, development, and hosting of digital community resources such as website hosting, forums, social networks, and media storage. This this end, it would be beneficial to have access to a symmetrical, high-speed Internet connection.
+
+#### Emergency Response / PPE
+
+The flexible fabrication capabilities can be used to produce protective equipment and other necessary resources in times of need.
 
 ### Potential library focus
 
