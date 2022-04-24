@@ -37,13 +37,23 @@ Given the nature of the involved equipment (e.g. CNC router, laser cutter, etc.)
 
 #### Community Cloud
 
-Provide cloud computing servers that can be accessed for free by the community to provide a local data center for learning, development, and hosting of digital community resources such as website hosting, forums, social networks, and media storage. This this end, it would be beneficial to have access to a symmetrical, high-speed Internet connection.
+Provide cloud computing servers that can be accessed for free by the community to provide a local data center for learning, development, and hosting of digital community resources such as website hosting, forums, social networks, and media storage. The space will need access to a symmetrical, high-speed Internet connection.
+
+#### Community Goods
+
+Establish relationships with local businesses to showcase and sell locally-designed/fabricated goods, and to furnish these businesses with digital services and goods (e.g. wooden signs, lamps, accessories (e.g. condiment caddies), furniture).
+
+#### Plastic Waste Recycling
+
+Following the [Precious Plastic](http://preciousplastic.com/) model, collect and grind plastic waste for use with injection molding, extrusion, and sheet press machines to create useful new and replacement products. This effort would help develop a communal understanding of the process and benefits of recycling while eliminating material from the waste stream and facilitating a sense of shared contribution and investment.
 
 #### Emergency Response / PPE
 
-The flexible fabrication capabilities can be used to produce protective equipment and other necessary resources in times of need.
+The digital services and fabrication capabilities can be used to produce protective equipment and other necessary resources in times of need.
 
 ### Potential library focus
+
+Libraries are a critical community resource ...
 
 ### Timeline
 
