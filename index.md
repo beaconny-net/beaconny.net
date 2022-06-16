@@ -26,8 +26,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 [Learn how to create your own forum](/pages/beaconny-net/start-a-new-forum)!
 
 
-## [Pages](pages)
+## Links
 
-- [beaconny-net](pages/beaconny-net)
-
-  - [How to create your own forum](pages/beaconny-net/start-a-new-forum)
+- [Interface Research Lab](https://irl.beaconny.net/)
+  - A proposal to create a community technology education and digital fabrication lab in Beacon, NY.
