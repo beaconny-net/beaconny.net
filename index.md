@@ -3,9 +3,7 @@ description: Beacon Community Network home page
 ---
 
 
-<p style="text-align: center; background-color: #eee;">
-  <img src="https://user-images.githubusercontent.com/585182/176661352-e05c3841-28e0-4eea-8335-e05a3b02ab81.png" width="250">
-</p>
+<img src="https://user-images.githubusercontent.com/585182/176661352-e05c3841-28e0-4eea-8335-e05a3b02ab81.png" width="250">
 
 # Beacon Community Network
 
