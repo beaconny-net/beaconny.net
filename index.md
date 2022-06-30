@@ -2,8 +2,10 @@
 description: Beacon Community Network home page
 ---
 
-![splash](https://user-images.githubusercontent.com/585182/162760057-c2af20f1-3e05-4725-be37-3e0baa24facf.png)
 
+<p style="text-align: center; background-color: #eee;">
+  <img src="https://user-images.githubusercontent.com/585182/176661352-e05c3841-28e0-4eea-8335-e05a3b02ab81.png" width="250">
+</p>
 
 # Beacon Community Network
 
@@ -18,6 +20,11 @@ _Looking for the [Official City of Beacon Website](https://beaconny.gov)? &larr;
 beaconny.net is maintained by members of the <a href="http://computing.beaconny.net">Beacon Computing Club</a> as a place for local digital content and as a platform for web technology education and experimentation.
 
 
+## Funding
+
+Projects are funded by the [Beacon Community Network](https://opencollective.com/beacon-community-network) 501(c)(3). If you'd like to support our projects, please [**donate here**](https://opencollective.com/beacon-community-network/contribute).
+
+
 ## [Forums](forums)
 
 - [Computing Club](http://computing.beaconny.net)
@@ -26,7 +33,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 [Learn how to create your own forum](/pages/beaconny-net/start-a-new-forum)!
 
 
-## Links
+## In Progress
 
 - [Interface Research Lab](https://irl.beaconny.net/)
   - A proposal to create a community technology education and digital fabrication lab in Beacon, NY.
