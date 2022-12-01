@@ -105,7 +105,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 - [Interface Research Lab](https://irl.beaconny.net/)
   - A proposal to create a community technology education and digital fabrication lab in Beacon, NY.
 - [Beacon Correctional Facility Redevelopment](https://irl.beaconny.net/beacon-correctional-facility-proposal)
-  - A concept for how this propoerty could be leveraged to the education, economic, and ecological benefit of our community.
+  - A concept for how this propoerty could be leveraged to the educational, economic, and ecological benefit of our community.
 
 ## Funding
 
