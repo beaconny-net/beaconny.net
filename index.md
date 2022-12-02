@@ -34,7 +34,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
   </table>
 </p>
 
-### Runs on a Computer in Beacon
+### Runs on Computers in Beacon
 
 <table>
   <tr>
