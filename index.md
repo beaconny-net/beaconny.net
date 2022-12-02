@@ -28,7 +28,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
       </td>
       <td>
         <h4><a href="http://computing.beaconny.net">Beacon Computing Club</a></h4>
-        Learn, share, discuss, and collaborate on all things computers, programming, and technology.</li>        
+        Learn, share, discuss, and collaborate on all things computers, programming, and technology.      
       </td>
     </tr>
   </table>
