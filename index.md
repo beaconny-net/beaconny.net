@@ -106,3 +106,19 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 ## Funding
 
 Projects are funded by the [Beacon Community Network](https://opencollective.com/beacon-community-network) 501(c)(3). If you'd like to support our projects, please [**donate here**](https://opencollective.com/beacon-community-network/contribute).
+
+## Deprecated Services
+
+<table>
+  <tr>
+    <td>
+      <a href="https://home-covid-test-finder.beaconny.net/">
+        <img src="https://user-images.githubusercontent.com/585182/205453514-5da7eb69-e5a6-4ee1-a7d6-69cd49adf5e3.png" width="250">
+      </a>
+    </td>
+    <td>
+      <h4><a href="https://home-covid-test-finder.beaconny.net/">COVID Home Test Stock Locator</a></h4>
+      A periodically updated inventory of in-stock COVID home tests at CVS stores near Beacon.
+    </td>
+  </tr>
+</table>
