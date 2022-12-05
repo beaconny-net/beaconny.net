@@ -107,7 +107,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 
 Projects are funded by the [Beacon Community Network](https://opencollective.com/beacon-community-network) 501(c)(3). If you'd like to support our projects, please [**donate here**](https://opencollective.com/beacon-community-network/contribute).
 
-## Deprecated Services
+## Previous Services
 
 <table>
   <tr>
