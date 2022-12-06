@@ -39,6 +39,20 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 <table>
   <tr>
     <td>
+      <a href="https://govdocs.beaconny.net/search/index.html?q=">
+        <img src="https://user-images.githubusercontent.com/585182/205776225-d6d0e6ab-7634-41e5-92f6-d183ef45d44c.png" width="250">
+      </a>
+    </td>
+    <td>
+      <h4><a href="https://govdocs.beaconny.net/search/index.html?q=">City of Beacon Document Archive</a></h4>
+      A fast, searchable archive of local public records.
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
       <a href="https://txt2img.beaconny.net/">
         <img src="https://user-images.githubusercontent.com/585182/205099621-4e775d70-38be-4aa2-a625-a5e47daedc4b.png" width="250">
       </a>
