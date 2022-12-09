@@ -1,0 +1,146 @@
+
+body {
+  margin: 0;
+}
+
+body,
+a {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+body > * {
+  margin: 0;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+nav {
+  display: none;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav > ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ol > li > a {
+  color: #fff;
+}
+
+header > h1,
+header > h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+header > h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-top: 0;
+}
+
+article {
+  margin: 0 1rem;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  color: rgba(72, 72, 72);
+}
+
+article > div.byline {
+  font-style: italic;
+  position: relative;
+  font-size: 1rem;
+  border-bottom: solid #888 1px;
+  padding-left: 1rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+article > .byline > img {
+  border-radius: 100%;
+  border: solid #ddd 1px;
+  width: 2.5rem;
+  position: relative;
+  top: 1rem;
+  margin-right: 0.5rem;
+}
+
+article > .byline > address {
+  display: inline;
+}
+
+.byline > address > a {
+  text-decoration: none;
+}
+
+article > p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+article > p:first-of-type::first-letter {
+  font-size: 3em;
+  font-family: Times New Roman;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    background-image: url("./header-background-grayscale.png");
+    padding-top: 0;
+    padding-bottom: 6rem;
+    position: relative;
+    border-bottom: solid #000 2px;
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  nav {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 0.5rem 2rem;
+    margin-bottom: 6rem;
+    text-align: right;
+  }
+
+  nav > ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav > ol > li > a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav > ol > li > a:hover {
+    text-decoration: underline;
+  }
+
+  header > h1 {
+    padding-bottom: 2rem 0 1rem 0;
+  }
+
+  header > h2 {
+    padding-bottom: 2rem;
+  }
+
+  header > h1,
+  header > h2 {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+
+  article {
+    margin: 1rem auto 0 auto;
+    width: 94%;
+  }
+}
