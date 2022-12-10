@@ -50,7 +50,7 @@ header > h2 {
 article {
   margin: 0 1rem;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  color: rgba(72, 72, 72);
+  color: rgb(72, 72, 72);
 }
 
 article > div.byline {
@@ -104,7 +104,7 @@ article > p:first-of-type::first-letter {
 
   nav {
     display: block;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(55, 51, 102, 0.9);
     color: #fff;
     padding: 0.5rem 2rem;
     margin-bottom: 6rem;
