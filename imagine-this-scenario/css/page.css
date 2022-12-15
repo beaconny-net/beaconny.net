@@ -107,7 +107,6 @@ article > p {
 article > p:first-of-type::first-letter {
   font-size: 3em;
   font-family: Times New Roman;
-  vertical-align: middle;
   margin-left: 1rem;
 }
 
@@ -128,6 +127,14 @@ main.index > ol {
   padding: 0;
 }
 
+/* Posts */
+
+article p img {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
 
 /* Non-Mobile */
 
@@ -180,5 +187,12 @@ main.index > ol {
   article {
     margin: 1rem auto 0 auto;
     width: 94%;
+  }
+
+  article p img {
+    float: right;
+    max-width: 50%;
+    margin: 1rem 0 1rem 1rem;
+
   }
 }

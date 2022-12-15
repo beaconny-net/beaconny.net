@@ -1,4 +1,5 @@
 
+from lib.frowntown import parse
 from lib.htmlephant import (
     Article,
     H2,
@@ -10,6 +11,10 @@ from lib.htmlephant import (
 from components import byline
 
 
+class UnescapedParagraph(Paragraph):
+    ESCAPE_TEXT = False
+
+
 Head = lambda post_title: (
     Title(post_title),
 )
@@ -17,7 +22,7 @@ Head = lambda post_title: (
 
 Body = lambda post, author: (
     Main(
-        _class="post",
+        _class=f"post _{post['slug'].lstrip('/')}",
         children=(
             Article(children=(
                 *byline.Body(
@@ -27,7 +32,7 @@ Body = lambda post, author: (
 
                 ),
                 H2(post["title"]),
-                *(Paragraph(x) for x in post["paragraphs"]),
+                *(UnescapedParagraph(parse(x)) for x in post["paragraphs"]),
             )),
         )
     ),
