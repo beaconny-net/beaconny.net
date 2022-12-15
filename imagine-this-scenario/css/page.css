@@ -1,6 +1,7 @@
 
 body {
   margin: 0;
+  padding-bottom: 4rem;
 }
 
 body,
@@ -18,20 +19,31 @@ header {
 }
 
 nav {
-  display: none;
-  background-color: #000;
+  padding: 0.5rem;
+  background-image: linear-gradient(rgba(55, 51, 102, 0.9), #000);
   color: #fff;
-  padding: 1rem;
 }
 
 nav > ol {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+nav > ol > li:first-child {
+  flex-grow: 1;
+  text-align: left;
 }
 
 nav > ol > li > a {
   color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav > ol > li > a:hover {
+  text-decoration: underline;
 }
 
 h1,
@@ -57,6 +69,9 @@ article {
   color: rgb(72, 72, 72);
 }
 
+article > h2 {
+
+}
 article > div.byline {
   font-style: italic;
   position: relative;
@@ -104,8 +119,8 @@ main.index div.byline {
   padding: 0;
 }
 
-main.index article > h2 {
-  padding-left: 1rem;
+main.index article > a > h2 {
+  margin-bottom: 0.2rem;
 }
 
 main.index > ol {
@@ -128,11 +143,12 @@ main.index > ol {
 
   nav {
     display: block;
-    background-color: rgba(55, 51, 102, 0.9);
-    color: #fff;
     padding: 0.5rem 2rem;
     margin-bottom: 6rem;
     text-align: right;
+    background-image: none;
+    background-color: rgba(55, 51, 102, 0.9);
+    color: #fff;
   }
 
   nav > ol {
@@ -144,10 +160,6 @@ main.index > ol {
   nav > ol > li > a {
     color: #fff;
     text-decoration: none;
-  }
-
-  nav > ol > li > a:hover {
-    text-decoration: underline;
   }
 
   h1,

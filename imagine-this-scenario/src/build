@@ -1,15 +1,63 @@
 #! /usr/bin/env python3
 import json
+import os
 
 from lib.htmlephant import Document
-from pages import index
-
-context = json.load(open("context.json", "rb"))
-
-html_gen = Document(
-    body_els=index.Body(context),
-    head_els=index.Head(context),
+from templates import (
+    index,
+    page,
+    post as post_tmpl,
 )
 
-with open("../index.html", "wb") as index_fh:
-    index_fh.write("".join(html_gen).encode("utf-8"))
+
+OUTPUT_PATH = ".."
+
+
+get_output_path = lambda filename: os.path.join(OUTPUT_PATH, filename)
+
+
+def render_doc(context, body_els=(), head_els=()):
+    return "".join(
+        Document(
+            body_els=(
+                *page.Body(
+                    base_path=context["site"]["base_path"],
+                    site_title=context["site"]["title"],
+                    site_subtitle=context["site"]["subtitle"],
+                ),
+                *body_els
+            ),
+            head_els=(*page.Head(), *head_els)
+        )
+    ).encode("utf-8")
+
+
+def main():
+    context = json.load(open("context.json", "rb"))
+
+    index_output_path = get_output_path("index.html")
+    with open(index_output_path, "wb") as index_fh:
+        index_fh.write(
+            render_doc(
+                context=context,
+                body_els=index.Body(posts=context["posts"], authors=context["authors"]),
+                head_els=index.Head(site_title=context["site"]["title"]),
+            )
+        )
+        print(f"Wrote: {index_output_path}")
+
+    for post in context["posts"]:
+        author = context["authors"][post["author"]]
+        post_output_path = get_output_path(f"{post['slug'].lstrip('/')}.html")
+        with open(post_output_path, "wb") as fh:
+            fh.write(
+                render_doc(
+                    context=context,
+                    body_els=post_tmpl.Body(post=post, author=author),
+                    head_els=post_tmpl.Head(post_title=post["title"])
+                )
+            )
+            print(f"Wrote: {post_output_path}")
+
+if __name__ == "__main__":
+    main()

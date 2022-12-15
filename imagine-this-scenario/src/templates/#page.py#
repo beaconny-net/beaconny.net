@@ -1,0 +1,11 @@
+
+from lib.htmlephant import Link
+from components import header
+
+
+Head = lambda: (
+    Link(rel="stylesheet", href="css/page.css"),
+)
+
+
+Body = lambda base_path: header.Body(base_path)

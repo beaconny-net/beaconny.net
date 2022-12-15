@@ -12,20 +12,23 @@ from lib.htmlephant import (
 )
 
 
-BODY_ELS = (
+Body = lambda base_path, title, subtitle: (
     Header(children=(
         Nav(children=(
             Ol(children=(
+                Li(children=(
+                    Anchor("home", href=base_path),
+                )),
                 Li(children=(
                     Anchor("beaconny.net", href="https://beaconny.net"),
                 )),
             )),
         )),
         H1(children=(
-            Span("Imagine This Scenario"),
+            Span(title),
         )),
         H2(children=(
-            Em("Glimpses Into the Possible Futures of Beacon, New York"),
+            Em(subtitle),
         ))
     )),
 )

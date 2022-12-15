@@ -4,18 +4,18 @@ from lib.htmlephant import (
     Anchor,
     Div,
     Img,
+    NOEL,
     Span,
     Time,
 )
 
 
-Head = lambda post, author: ()
-
-Body = lambda post, author: (
+Body = lambda post, author, show_avatar=True: (
     Div(
         _class="byline",
         children=(
-            Img(src=author["avatarUrl"], alt="author avatar"),
+            (Img(src=author["avatarUrl"], alt="author avatar")
+             if show_avatar else NOEL),
             Address(
                 _class="author",
                 children=(
