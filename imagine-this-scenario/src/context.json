@@ -1,0 +1,21 @@
+{
+  "authors": {
+    "derekenos": {
+      "name": "Derek Enos",
+      "avatarUrl": "/images/de-avatar.webp",
+      "url": "https://derekenos.com"
+    }
+  },
+  "posts": [
+    {
+      "author": "derekenos",
+      "datetime": "2022-12-15",
+      "title": "City Register of Socially Significant Places",
+      "slug": "/2022-12-15-city-register-of-socially-significant-places",
+      "paragraphs": [
+        "This is the first paragraph.",
+        "This is the second paragraph."
+      ]
+    }
+  ]
+}

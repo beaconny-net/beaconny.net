@@ -1,0 +1,7 @@
+[submodule "imagine-this-scenario/lib/htmlephant"]
+	path = imagine-this-scenario/lib/htmlephant
+	url = https://github.com/derekenos/htmlephant
+[submodule "imagine-this-scenario/src/lib/htmlephant"]
+	path = imagine-this-scenario/src/lib/htmlephant
+	url = https://github.com/derekenos/htmlephant
+	branch = minimal

@@ -1,0 +1,15 @@
+#! /usr/bin/env python3
+import json
+
+from lib.htmlephant import Document
+from pages import index
+
+context = json.load(open("context.json", "rb"))
+
+html_gen = Document(
+    body_els=index.Body(context),
+    head_els=index.Head(context),
+)
+
+with open("../index.html", "wb") as index_fh:
+    index_fh.write("".join(html_gen).encode("utf-8"))
