@@ -1,4 +1,6 @@
 
+from lib.frowntown import parse
+from lib.htmlephant_extensions import UnescapedSpan
 from lib.htmlephant import (
     Anchor,
     Em,
@@ -25,10 +27,10 @@ Body = lambda base_path, title, subtitle: (
             )),
         )),
         H1(children=(
-            Span(title),
+            UnescapedSpan(parse(title)),
         )),
         H2(children=(
-            Em(subtitle),
+            UnescapedSpan(parse(subtitle)),
         ))
     )),
 )

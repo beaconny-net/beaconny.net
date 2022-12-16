@@ -1,5 +1,6 @@
 
 from lib.frowntown import parse
+from lib.htmlephant_extensions import UnescapedParagraph
 from lib.htmlephant import (
     Article,
     H2,
@@ -9,10 +10,6 @@ from lib.htmlephant import (
 )
 
 from components import byline
-
-
-class UnescapedParagraph(Paragraph):
-    ESCAPE_TEXT = False
 
 
 Head = lambda post_title: (
