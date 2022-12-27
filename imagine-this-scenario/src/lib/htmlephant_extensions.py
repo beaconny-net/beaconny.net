@@ -1,6 +1,7 @@
 
 from lib.htmlephant import (
     Div,
+    HTMLElement,
     Paragraph,
     Span,
 )
@@ -16,3 +17,11 @@ class UnescapedParagraph(Paragraph):
 
 class UnescapedSpan(Span):
     ESCAPE_TEXT = False
+
+
+class RawHTML(HTMLElement):
+    def __init__(self, html):
+        self._html = html
+
+    def html(self, indent):
+        return " " * (indent + self.CHILD_INDENT) + self._html

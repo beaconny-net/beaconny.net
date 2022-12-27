@@ -13,6 +13,12 @@ body > * {
   margin: 0;
 }
 
+blockquote {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: solid #eee 4px;
+}
+
 header {
   background-color: #000;
   color: #fff;
@@ -100,14 +106,14 @@ article > .byline > address {
 }
 
 article > p {
-  font-size: 1rem;
-  line-height: 1.8rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
 }
 
 article > p:first-of-type::first-letter {
-  font-size: 3em;
-  font-family: Times New Roman;
-  margin-left: 1rem;
+  font-size: 4em;
+  float: left;
+  padding: 1.3rem 0.25rem 0.4rem 0;
 }
 
 
@@ -129,8 +135,12 @@ main.index > ol {
 
 /* Posts */
 
+article figure {
+  text-align: center;
+}
+
 article figure img {
-  width: 100%;
+  width: 75%;
 }
 
 /* Non-Mobile */
@@ -186,14 +196,16 @@ article figure img {
     width: 94%;
   }
 
-  article > div.figure,
-  article > div.figure figure {
+  article figure {
     display: inline-block;
-  }
-
-  article > div.figure {
+    text-align: left;
     float: right;
     max-width: 33%;
     margin: 1rem 0 1rem 1rem;
   }
+
+  article figure img {
+    width: 33vw;
+  }
+
 }

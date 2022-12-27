@@ -5,9 +5,19 @@ import re
 from lib import tests
 from lib.htmlephant import (
     Anchor,
+    BlockQuote,
     Em,
     HTMLElement,
     Img,
+    H1,
+    H2,
+    H3,
+    H4,
+    H5,
+    H6,
+    Li,
+    Ol,
+    Strong,
 )
 
 
@@ -37,6 +47,14 @@ class InlineEm(Em):
     CHILD_INDENT = 0
 
 
+class InlineStrong(Strong):
+    CHILD_INDENT = 0
+
+
+class UnescapedLi(Li):
+    ESCAPE_TEXT = False
+
+
 ###############################################################################
 # Helper Functions
 ###############################################################################
@@ -53,7 +71,11 @@ build_url = lambda base_path, path: \
 ###############################################################################
 
 
-ITALIC_PATTERN = r"(?:^|(?<=\s))_(?P<text>[^_]+)_(?:$|(?=\s))"
+ITALIC_PATTERN = "(?:^|(?<=\s))_(?P<text>[^_]+)_(?:$|(?=\s))"
+
+STRONG_PATTERN = "(?:^|(?<=\s))\*\*(?P<text>[^\*]+)\*\*(?:$|(?=\s))"
+
+HEADER_PATTERN = "^(?P<level>#+)\s*(?P<text>.+)"
 
 Title = lambda name: f'(?:\s+"(?P<{name}>[^"]+)")'
 
@@ -62,9 +84,14 @@ Link = lambda text_pattern="(?P<text>[^\]]+)": \
 
 LINK_PATTERN = Link()
 
+LIST_PATTERN = "^-(?P<list_style_type>[^\[]+)?\[(?P<items>[^\]]+)]$"
+LIST_ITEM_PATTERN = re.compile("(?P<item>[^|]+)(?:|\s*)?")
+
 IMAGE_PATTERN = f"!\[(?P<alt_text>[^\]]+)\]\((?P<src>[^\)\s]+){Title('image_title')}?\)"
 
-LINKED_IMAGE_PATTERN = Link(IMAGE_PATTERN)
+LINKED_IMAGE_PATTERN = f"^{Link(IMAGE_PATTERN)}"
+
+BLOCK_QUOTE_PATTERN = "^\>(?:\((?P<cite>[^\)]+)\))?\s*(?P<text>.+)"
 
 
 ###############################################################################
@@ -74,6 +101,27 @@ LINKED_IMAGE_PATTERN = Link(IMAGE_PATTERN)
 
 def italic_handler(context, match):
     return gen_to_str(InlineEm(match.group(1)).html())
+
+
+def strong_handler(context, match):
+    return gen_to_str(InlineStrong(match.group(1)).html())
+
+
+def header_handler(context, match):
+    match_d = match.groupdict()
+    el = (H1, H2, H3, H4, H5, H6)[len(match_d["level"])]
+    return gen_to_str(el(match_d["text"]).html())
+
+
+def list_handler(context, match):
+    match_d = match.groupdict()
+    list_style_type = match_d["list_style_type"] or "disc"
+    items_str = match_d["items"]
+    items = [parse(x) for x in LIST_ITEM_PATTERN.findall(items_str)]
+    return gen_to_str(Ol(
+        children=(UnescapedLi(item) for item in items),
+        style=f"list-style-type: {list_style_type};"
+    ).html())
 
 
 def image_handler(context, match):
@@ -116,6 +164,11 @@ def linked_image_handler(context, match):
     )
 
 
+def block_quote_handler(context, match):
+    match_d = match.groupdict()
+    return gen_to_str(BlockQuote(match_d["text"], cite=match_d["cite"]).html())
+
+
 ###############################################################################
 # Pattern => Replacer Map and parse() Function
 ###############################################################################
@@ -123,10 +176,14 @@ def linked_image_handler(context, match):
 
 PATTERN_REPLACER_PAIRS = tuple((
     (re.compile(k), v) for k, v in (
-        (LINKED_IMAGE_PATTERN, linked_image_handler),
-        (ITALIC_PATTERN, italic_handler),
-        (LINK_PATTERN, link_handler),
+        (HEADER_PATTERN, header_handler),
         (IMAGE_PATTERN, image_handler),
+        (ITALIC_PATTERN, italic_handler),
+        (LINKED_IMAGE_PATTERN, linked_image_handler),
+        (LINK_PATTERN, link_handler),
+        (LIST_PATTERN, list_handler),
+        (STRONG_PATTERN, strong_handler),
+        (BLOCK_QUOTE_PATTERN, block_quote_handler),
     )
 ))
 
