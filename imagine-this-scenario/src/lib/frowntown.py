@@ -6,6 +6,7 @@ from lib import tests
 from lib.htmlephant import (
     Anchor,
     Em,
+    HTMLElement,
     Img,
 )
 
@@ -16,6 +17,16 @@ __all__ = ("parse",)
 ###############################################################################
 # HTMLephant Subclasses
 ###############################################################################
+
+
+class InlineFigure(HTMLElement):
+    CHILD_INDENT = 0
+    TAG_NAME = 'figure'
+
+
+class InlineFigureCaption(HTMLElement):
+    CHILD_INDENT = 0
+    TAG_NAME = 'figcaption'
 
 
 class InlineAnchor(Anchor):
@@ -68,9 +79,13 @@ def italic_handler(context, match):
 def image_handler(context, match):
     match_d = match.groupdict()
     alt_text = match_d["alt_text"]
+    image_title = match_d["image_title"]
     src = build_url(context["href_base_path"], match_d["src"])
     return gen_to_str(
-        Img(src=src, alt=alt_text, title=match_d["image_title"] or alt_text).html()
+        InlineFigure(children=(
+            Img(src=src, alt=alt_text, title=image_title or alt_text),
+            InlineFigureCaption(image_title or alt_text),
+        )).html()
     )
 
 
@@ -83,17 +98,22 @@ def link_handler(context, match):
 
 def linked_image_handler(context, match):
     match_d = match.groupdict()
-    href = build_url(context["href_base_path"], match_d["href"])
-    src = build_url(context["href_base_path"], match_d["src"])
     alt_text = match_d["alt_text"]
+    href = build_url(context["href_base_path"], match_d["href"])
+    image_title = match_d["image_title"]
+    src = build_url(context["href_base_path"], match_d["src"])
     return gen_to_str(
         InlineAnchor(
             href=href,
             title=match_d["link_title"],
             children=(
-                Img(src=src, alt=alt_text, title=match_d["image_title"] or alt_text),
+                InlineFigure(children=(
+                    Img(src=src, alt=alt_text, title=image_title or alt_text),
+                    InlineFigureCaption(image_title or alt_text),
+                )),
             )
-        ).html())
+        ).html()
+    )
 
 
 ###############################################################################
@@ -125,10 +145,10 @@ PATTERN_REPLACER_PAIRS = tuple((
     ),
     (
         ("![alt text](images/test.png)",),
-        '<img src="images/test.png" alt="alt text" title="alt text">'),
+        '<figure><img src="images/test.png" alt="alt text" title="alt text"><figcaption>alt text</figcaption></figure>'),
     (
         ('![alt text](images/test.png "with title")',),
-        '<img src="images/test.png" alt="alt text" title="with title">'
+        '<figure><img src="images/test.png" alt="alt text" title="with title"><figcaption>with title</figcaption></figure>'
     ),
 )
 def parse(text, href_base_path=None):

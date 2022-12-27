@@ -129,11 +129,8 @@ main.index > ol {
 
 /* Posts */
 
-article p img {
-  display: block;
+article figure img {
   width: 100%;
-  margin: 1rem 0;
-  border-radius: 1rem;
 }
 
 /* Non-Mobile */
@@ -189,10 +186,14 @@ article p img {
     width: 94%;
   }
 
-  article p img {
-    float: right;
-    max-width: 50%;
-    margin: 1rem 0 1rem 1rem;
+  article > div.figure,
+  article > div.figure figure {
+    display: inline-block;
+  }
 
+  article > div.figure {
+    float: right;
+    max-width: 33%;
+    margin: 1rem 0 1rem 1rem;
   }
 }

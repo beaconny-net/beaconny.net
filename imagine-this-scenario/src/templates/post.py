@@ -1,6 +1,10 @@
 
 from lib.frowntown import parse
-from lib.htmlephant_extensions import UnescapedParagraph
+from lib.htmlephant_extensions import (
+    UnescapedDiv,
+    UnescapedParagraph,
+)
+
 from lib.htmlephant import (
     Article,
     H2,
@@ -29,7 +33,11 @@ Body = lambda post, author: (
 
                 ),
                 H2(post["title"]),
-                *(UnescapedParagraph(parse(x)) for x in post["paragraphs"]),
+                *(UnescapedDiv(parsed, _class="figure")
+                  if (parsed:=parse(x)).startswith("<")
+                  else UnescapedParagraph(parsed)
+                  for x in post["paragraphs"]
+                ),
             )),
         )
     ),

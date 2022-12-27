@@ -2,7 +2,7 @@
   "site": {
     "base_path": "/",
     "title": "Imagine _This_ Scenario",
-    "subtitle": "_Glimpses Into the Possible Futures of Beacon, New York_"
+    "subtitle": "_Thoughts on the Future of Opportunity and Equity in Beacon, New York_"
   },
   "authors": {
     "derekenos": {
@@ -18,8 +18,28 @@
       "title": "City Register of Socially Significant Places",
       "slug": "/2022-12-15-city-register-of-socially-significant-places",
       "paragraphs": [
-        "While walking down Main Street the other morning I noticed a couple of city workers walking ahead of me enter Mr. V's Deli. I've never been to Mr. V's Deli because I get the impression that they don't cater to my strict vegetarian diet, but I should maybe check it out anyway. Or maybe I shouldn't. Mr. V's doesn't have to be for me. They always look busy in the morning when I walk by, and I recognize many of their customers as long-time Beacon residents. It's seems like a great social scene, and I hear that the food's good. ![a photograph of the mister vs deli storefront](images/mister-vees-deli.jpg)",
+        "While walking down Main Street the other morning I noticed a couple of city workers walking ahead of me enter Mr. V's Deli. I've never been to Mr. V's Deli because I get the impression that they don't cater to my strict vegetarian diet, but I should maybe check it out anyway. Or maybe I shouldn't. Mr. V's doesn't have to be for me. They always look busy in the morning when I walk by, and I recognize many of their customers as long-time Beacon residents. It's seems like a great social scene, and I hear that the food's good.",
+        "![Mr. V's Deli Storefront](images/mister-vees-deli.jpg)",
         "If Mr. V's is as socially important as I suspect, our community should figure out how to ensure its continued existence."
+      ]
+    },
+    {
+      "author": "derekenos",
+      "datetime": "2022-12-26",
+      "title": "Where We At?",
+      "slug": "/2022-12-26-where-we-at",
+      "paragraphs": [
+        "One of the the things that I always keep in mind when thinking about the future of Beacon is Maslow's Hierarchy of Need.",
+        "[![Maslow's Hierarchy of Need](images/MaslowHierarchy.png)](https://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs)"
+      ]
+    },
+    {
+      "author": "derekenos",
+      "datetime": "2022-12-26",
+      "title": "Let's Start Today",
+      "slug": "/2022-12-26-lets-start-today",
+      "paragraphs": [
+        "\n- Reduce your hours and devote time to a local effort\n- Keep working and tithe to your community efforts"
       ]
     }
   ]
