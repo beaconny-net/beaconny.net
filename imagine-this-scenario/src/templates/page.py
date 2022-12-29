@@ -3,13 +3,9 @@ from lib.htmlephant import Link
 from components import header
 
 
-Head = lambda: (
-    Link(rel="stylesheet", href="css/page.css"),
+Head = lambda context: (
+    Link(rel="stylesheet", href=f"{context['site']['base_path']}/css/page.css"),
 )
 
 
-Body = lambda base_path, site_title, site_subtitle: header.Body(
-    base_path=base_path,
-    title=site_title,
-    subtitle=site_subtitle
-)
+Body = lambda context: header.Body(context)

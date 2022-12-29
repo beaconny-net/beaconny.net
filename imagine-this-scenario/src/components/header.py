@@ -14,23 +14,30 @@ from lib.htmlephant import (
 )
 
 
-Body = lambda base_path, title, subtitle: (
-    Header(children=(
-        Nav(children=(
-            Ol(children=(
-                Li(children=(
-                    Anchor("home", href=base_path),
+def Body(context):
+    base_path = context["site"]["base_path"]
+    background_image = context["site"]["header_background_image"]
+    title = context["site"]["title"]
+    subtitle = context["site"]["subtitle"]
+    return (
+        Header(
+            style=f"background-image: url({base_path}/images/{background_image})",
+            children=(
+                Nav(children=(
+                    Ol(children=(
+                        Li(children=(
+                            Anchor("home", href=base_path),
+                        )),
+                        Li(children=(
+                            Anchor("beaconny.net", href="https://beaconny.net"),
+                        )),
+                    )),
                 )),
-                Li(children=(
-                    Anchor("beaconny.net", href="https://beaconny.net"),
+                H1(children=(
+                    UnescapedSpan(parse(title)),
                 )),
+                H2(children=(
+                    UnescapedSpan(parse(subtitle)),
+                ))
             )),
-        )),
-        H1(children=(
-            UnescapedSpan(parse(title)),
-        )),
-        H2(children=(
-            UnescapedSpan(parse(subtitle)),
-        ))
-    )),
-)
+        )

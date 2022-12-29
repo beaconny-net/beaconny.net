@@ -147,7 +147,6 @@ article figure img {
 
 @media screen and (min-width: 1024px) {
   header {
-    background-image: url("/images/header-background-grayscale.png");
     padding-top: 0;
     padding-bottom: 6rem;
     position: relative;

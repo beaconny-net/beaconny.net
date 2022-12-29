@@ -1,6 +1,7 @@
 {
   "site": {
-    "base_path": "/",
+    "base_path": "/imagine-this-scenario",
+    "header_background_image": "header-background-grayscale.png",
     "title": "Imagine _This_ Scenario",
     "subtitle": "_Thoughts on the Future of Opportunity and Equity in Beacon, New York_"
   },
@@ -15,8 +16,9 @@
     {
       "author": "derekenos",
       "datetime": "2022-12-29",
+      "header_background_image": "header-background-grayscale.png",
       "title": "Run It Like a Startup / The Hierarchy of Needs",
-      "slug": "/2022-12-27-run-it-like-a-startup",
+      "slug": "2022-12-29-run-it-like-a-startup---the-hierarchy-of-needs",
       "blocks": [
         "For almost a decade, I worked at a small web tech startup called [Octopart](https://octopart.com/). We collected and aggregated inventories from hundreds of electronic and industrial component suppliers and made it all searchable. We were a small team, and we got really good at identifying problems, setting goals, iterating toward solutions, and measuring our progress. Many tech startups share a similar story; a small group of folks leveraging technology to great effect toward some agreed-upon goals. Having had this experience, I'm often shocked at how bad our city government is at these same competencies when it comes to the well-being of our community, despite the fact that the stakes are much higher.",
         "While most startups exist primarily to generate revenue, which Beacon does excel at by increasing its tax base through its support of relentless development, a city government has the much bigger responsibility of ensuring the safety, security, and well-being of its constituents. As a starting point for thinking about what types of things we should expect our city government to provide with respect to community well-being, let's take a look at [Maslow's Hierarchy of Needs](https://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs), the levels of which (from bottom to top) can be roughly summarized as:",

@@ -19,14 +19,10 @@ def render_doc(context, body_els=(), head_els=()):
     return "".join(
         Document(
             body_els=(
-                *page.Body(
-                    base_path=context["site"]["base_path"],
-                    site_title=context["site"]["title"],
-                    site_subtitle=context["site"]["subtitle"],
-                ),
+                *page.Body(context),
                 *body_els
             ),
-            head_els=(*page.Head(), *head_els)
+            head_els=(*page.Head(context), *head_els)
         )
     ).encode("utf-8")
 
@@ -34,13 +30,19 @@ def render_doc(context, body_els=(), head_els=()):
 def main():
     context = json.load(open("context.json", "rb"))
 
+    # Normalize base_path.
+    base_path = context["site"]["base_path"].rstrip("/")
+    if not base_path.startswith("/"):
+        base_path = f"/{base_path}"
+    context["site"]["base_path"] = base_path
+
     index_output_path = get_output_path("index.html")
     with open(index_output_path, "wb") as index_fh:
         index_fh.write(
             render_doc(
                 context=context,
-                body_els=index.Body(posts=context["posts"], authors=context["authors"]),
-                head_els=index.Head(site_title=context["site"]["title"]),
+                body_els=index.Body(context),
+                head_els=index.Head(context),
             )
         )
         print(f"Wrote: {index_output_path}")
@@ -52,11 +54,12 @@ def main():
             fh.write(
                 render_doc(
                     context=context,
-                    body_els=post_tmpl.Body(post=post, author=author),
+                    body_els=post_tmpl.Body(context, post=post, author=author),
                     head_els=post_tmpl.Head(post_title=post["title"])
                 )
             )
             print(f"Wrote: {post_output_path}")
+
 
 if __name__ == "__main__":
     main()

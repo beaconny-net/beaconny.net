@@ -21,12 +21,13 @@ Head = lambda post_title: (
 )
 
 
-Body = lambda post, author: (
+Body = lambda context, post, author: (
     Main(
         _class=f"post _{post['slug'].lstrip('/')}",
         children=(
             Article(children=(
                 *byline.Body(
+                    context,
                     post=post,
                     author=author,
                     show_avatar=True,
