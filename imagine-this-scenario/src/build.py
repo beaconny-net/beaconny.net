@@ -55,7 +55,7 @@ def main():
                 render_doc(
                     context=context,
                     body_els=post_tmpl.Body(context, post=post, author=author),
-                    head_els=post_tmpl.Head(post_title=post["title"])
+                    head_els=post_tmpl.Head(context, post=post),
                 )
             )
             print(f"Wrote: {post_output_path}")

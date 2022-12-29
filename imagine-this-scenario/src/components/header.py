@@ -16,12 +16,10 @@ from lib.htmlephant import (
 
 def Body(context):
     base_path = context["site"]["base_path"]
-    background_image = context["site"]["header_background_image"]
     title = context["site"]["title"]
     subtitle = context["site"]["subtitle"]
     return (
         Header(
-            style=f"background-image: url({base_path}/images/{background_image})",
             children=(
                 Nav(children=(
                     Ol(children=(

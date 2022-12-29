@@ -26,8 +26,8 @@ header {
 
 nav {
   padding: 0.5rem;
-  background-image: linear-gradient(rgba(55, 51, 102, 0.9), #000);
   color: #fff;
+  text-decoration: underline;
 }
 
 nav > ol {
@@ -162,6 +162,7 @@ article figure img {
     background-image: none;
     background-color: rgba(55, 51, 102, 0.9);
     color: #fff;
+    text-decoration: none;
   }
 
   nav > ol {

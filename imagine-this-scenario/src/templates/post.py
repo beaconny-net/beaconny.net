@@ -10,15 +10,27 @@ from lib.htmlephant import (
     H2,
     Main,
     Paragraph,
+    Style,
     Title,
 )
 
 from components import byline
 
 
-Head = lambda post_title: (
-    Title(post_title),
-)
+def Head(context, post):
+    base_path = context["site"]["base_path"]
+    background_image = post["header_background_image"]
+    return (
+        Title(post["title"]),
+        Style(f"""
+@media screen and (min-width: 1024px) {{
+  header {{
+    background-image: url("{base_path}/images/{background_image}");
+  }}
+}}
+        """)
+    )
+
 
 
 Body = lambda context, post, author: (
