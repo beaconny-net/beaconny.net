@@ -14,12 +14,13 @@ from lib.htmlephant import (
 )
 
 
-def Body(context):
+def Body(context, page_type):
     base_path = context["site"]["base_path"]
     title = context["site"]["title"]
     subtitle = context["site"]["subtitle"]
     return (
         Header(
+            _class=page_type,
             children=(
                 Nav(children=(
                     Ol(children=(
