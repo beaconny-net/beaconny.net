@@ -110,6 +110,11 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
   </tr>
 </table>
 
+## Blogs
+
+- [Imagine _This_ Scenario](https://beaconny.net/imagine-this-scenario/)
+  - Thoughts on the Future of Opportunity and Equity in Beacon, New York
+
 ## Proposals
 
 - [Interface Research Lab](https://irl.beaconny.net/)
