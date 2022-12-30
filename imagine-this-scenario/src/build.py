@@ -27,14 +27,36 @@ def render_doc(context, page_type, body_els=(), head_els=()):
     ).encode("utf-8")
 
 
-def main():
-    context = json.load(open("context.json", "rb"))
+class Context(dict):
+    """Class to normalize and provide context-aware helper functions for
+    context data."""
+    def __init__(self, data):
+        super().__init__(data)
+        self.normalize()
 
-    # Normalize base_path.
-    base_path = context["site"]["base_path"].rstrip("/")
-    if not base_path.startswith("/"):
-        base_path = f"/{base_path}"
-    context["site"]["base_path"] = base_path
+    def normalize(self):
+        # Ensure that paths have a "/" at the beginning but not at the end.
+        for k in ("base_path", "css_path", "images_path", "posts_path"):
+            path = self["site"][k].strip().rstrip("/")
+            if not path.startswith("/"):
+                path = f"/{path}"
+            self["site"][k] = "" if path == "/" else path
+
+    def css_url(self, filename):
+        """Return a absolute CSS file path."""
+        return f"{self['site']['base_path']}{self['site']['css_path']}/{filename}"
+
+    def image_url(self, filename):
+        """Return a absolute image file path."""
+        return f"{self['site']['base_path']}{self['site']['images_path']}/{filename}"
+
+    def post_url(self, slug):
+        """Return a absolute post file path."""
+        return f"{self['site']['base_path']}{self['site']['posts_path']}/{slug}"
+
+
+def main():
+    context = Context(json.load(open("context.json", "rb")))
 
     # Generate index.html
     index_output_path = get_output_path("index.html")

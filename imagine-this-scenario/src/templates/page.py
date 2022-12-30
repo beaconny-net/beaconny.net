@@ -4,7 +4,7 @@ from components import header
 
 
 Head = lambda context: (
-    Link(rel="stylesheet", href=f"{context['site']['base_path']}/css/page.css"),
+    Link(rel="stylesheet", href=context.css_url("page.css")),
 )
 
 

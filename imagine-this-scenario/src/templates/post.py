@@ -17,20 +17,16 @@ from lib.htmlephant import (
 from components import byline
 
 
-def Head(context, post):
-    base_path = context["site"]["base_path"]
-    background_image = post["header_background_image"]
-    return (
-        Title(post["title"]),
-        Style(f"""
+Head = lambda context, post: (
+    Title(post["title"]),
+    Style(f"""
 @media screen and (min-width: 1024px) {{
   header {{
-    background-image: url("{base_path}/images/{background_image}");
+    background-image: url("{context.image_url(post['header_background_image'])}");
   }}
 }}
-        """)
-    )
-
+    """)
+)
 
 
 Body = lambda context, post, author: (

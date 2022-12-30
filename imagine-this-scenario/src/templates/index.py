@@ -16,23 +16,19 @@ from lib.htmlephant import (
 from components import byline
 
 
-def Head(context):
-    base_path = context["site"]["base_path"]
-    background_image = context["site"]["header_background_image"]
-    return (
-        Title(context["site"]["title"]),
-        Style(f"""
+Head = lambda context: (
+    Title((site:=context["site"])["title"]),
+    Style(f"""
 @media screen and (min-width: 1024px) {{
   header {{
-    background-image: url("{base_path}/images/{background_image}");
+    background-image: url("{context.image_url(site['header_background_image'])}");
   }}
 }}
-        """)
-    )
+    """)
+)
 
 
 def Body(context):
-    base_path = context["site"]["base_path"]
     posts = context["posts"]
     authors = context["authors"]
     return (
@@ -44,7 +40,7 @@ def Body(context):
                     Article(children=(
                         Anchor(
                             children=(H2(post["title"]),),
-                            href=f"{base_path}/{post['slug']}"
+                            href=context.post_url(post["slug"]),
                         ),
                         *byline.Body(
                             context,
