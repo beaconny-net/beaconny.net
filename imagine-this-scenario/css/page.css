@@ -107,13 +107,13 @@ article > .byline > address {
 
 article > p {
   font-size: 1.1rem;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 
 article > p:first-of-type::first-letter {
   font-size: 4em;
   float: left;
-  padding: 1.3rem 0.25rem 0.4rem 0;
+  padding: 1rem 0.25rem 1rem 0;
 }
 
 
@@ -195,6 +195,11 @@ article figure img {
     font-size: 1.2rem;
   }
 
+  main {
+    max-width: 90%;
+    margin: auto;
+  }
+
   article {
     margin: 1rem auto 0 auto;
     width: 94%;
@@ -202,14 +207,14 @@ article figure img {
 
   article figure {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     float: right;
     max-width: 33%;
     margin: 1rem 0 1rem 1rem;
   }
 
   article figure img {
-    width: 33vw;
+    width: 100%;
   }
 
 }

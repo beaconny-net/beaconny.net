@@ -18,6 +18,16 @@
   "posts": [
     {
       "author": "derekenos",
+      "datetime": "2022-12-30",
+      "header_background_image": "00901-3730104822-computer cloud internet.png",
+      "title": "The Rationale for Local Computing",
+      "slug": "2022-12-30-the-rationale-for-a-local-cloud",
+      "blocks": [
+        "When I tell people that I'm building community-centric [websites and services](https://beaconny.net) that run on computers in my basement, they sometimes ask \"why not just use _[some existing service]_ ?\" I'll tell you why! All of the websites and online social networks that we depend on, e.g. Facebook, Twitter, Instagram, YouTube, TikTok, etc., run on computers that we don't control, that we access over networks that we also don't control. This means that any time something goes wrong with the service or the network, we potentially lose access to critical social and informational resources."
+      ]
+    },
+    {
+      "author": "derekenos",
       "datetime": "2022-12-29",
       "header_background_image": "00881-60802327-maslow's hierarchy of needs pyramid.png",
       "title": "Run It Like a Startup / The Hierarchy of Needs",
