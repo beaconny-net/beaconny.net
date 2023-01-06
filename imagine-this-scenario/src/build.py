@@ -3,6 +3,7 @@ import os
 
 from lib.htmlephant import Document
 from templates import (
+    drafts,
     index,
     page,
     post as post_tmpl,
@@ -15,11 +16,11 @@ OUTPUT_PATH = ".."
 get_output_path = lambda filename: os.path.join(OUTPUT_PATH, filename)
 
 
-def render_doc(context, page_type, body_els=(), head_els=()):
+def render_doc(context, page_name, body_els=(), head_els=()):
     return "".join(
         Document(
             body_els=(
-                *page.Body(context, page_type=page_type),
+                *page.Body(context, page_name=page_name),
                 *body_els
             ),
             head_els=(*page.Head(context), *head_els)
@@ -64,12 +65,25 @@ def main():
         index_fh.write(
             render_doc(
                 context=context,
-                page_type="index",
+                page_name="index",
                 body_els=index.Body(context),
                 head_els=index.Head(context),
             )
         )
         print(f"Wrote: {index_output_path}")
+
+    # Generate drafts.html
+    drafts_output_path = get_output_path("drafts.html")
+    with open(drafts_output_path, "wb") as drafts_fh:
+        drafts_fh.write(
+            render_doc(
+                context=context,
+                page_name="drafts",
+                body_els=drafts.Body(context),
+                head_els=drafts.Head(context),
+            )
+        )
+        print(f"Wrote: {drafts_output_path}")
 
     # Generate an HTML file for each post.
     for post in context["posts"]:
@@ -79,7 +93,7 @@ def main():
             fh.write(
                 render_doc(
                     context=context,
-                    page_type="post",
+                    page_name="post",
                     body_els=post_tmpl.Body(context, post=post, author=author),
                     head_els=post_tmpl.Head(context, post=post),
                 )

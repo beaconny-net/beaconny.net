@@ -5,7 +5,9 @@ body {
 }
 
 body,
-a {
+a,
+nav > ol > li > a,
+nav > ol > li > span {
   font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
@@ -17,6 +19,8 @@ blockquote {
   margin-left: 1rem;
   padding-left: 1rem;
   border-left: solid #eee 4px;
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 header {
@@ -27,7 +31,6 @@ header {
 nav {
   padding: 0.5rem;
   color: #fff;
-  text-decoration: underline;
 }
 
 nav > ol {
@@ -37,19 +40,24 @@ nav > ol {
   display: flex;
 }
 
-nav > ol > li:first-child {
+nav > ol > li:nth-child(2) {
   flex-grow: 1;
   text-align: left;
 }
 
-nav > ol > li > a {
-  color: #fff;
+nav > ol > li > a,
+nav > ol > li > span {
   text-decoration: none;
   padding: 1rem;
 }
 
-nav > ol > li > a:hover {
+nav > ol > li > a {
   text-decoration: underline;
+  color: #fff;
+}
+
+nav > ol > li > span {
+  color: #888;
 }
 
 h1,
@@ -69,15 +77,16 @@ header > h2 {
   padding-top: 0;
 }
 
+main {
+  width: 94%;
+  margin: 2rem auto;
+}
+
 article {
-  margin: 0 1rem;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   color: rgb(72, 72, 72);
 }
 
-article > h2 {
-
-}
 article > div.byline {
   font-style: italic;
   position: relative;
@@ -105,6 +114,16 @@ article > .byline > address {
   text-decoration: none;
 }
 
+article ol {
+  padding: 0 0 0 1rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+article li {
+  line-height: 1.3em;
+}
+
 article > p {
   font-size: 1.1rem;
   line-height: 1.6rem;
@@ -116,19 +135,34 @@ article > p:first-of-type::first-letter {
   padding: 1rem 0.25rem 1rem 0;
 }
 
-
-/* Index page */
-
-main.index div.byline {
+main.index div.byline,
+main.drafts div.byline {
   border-bottom: none;
   padding: 0;
 }
 
-main.index article > a > h2 {
+main.index,
+main.drafts {
+  display: block;
+  height: 100%;
+}
+
+main.drafts p {
+  background-color: #eee;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: inset #888 2px 2px 6px;
+  color: #444;
+  font-style: italic;
+}
+
+main.index article h2,
+main.drafts article h2 {
   margin-bottom: 0.2rem;
 }
 
-main.index > ol {
+main.index ol,
+main.drafts ol {
   list-style: none;
   padding: 0;
 }
@@ -141,7 +175,7 @@ article figure {
 }
 
 article figure img {
-  width: 75%;
+  width: 100%;
 }
 
 /* Non-Mobile */
@@ -165,7 +199,8 @@ article figure img {
     text-decoration: none;
   }
 
-  header.index > nav {
+  header.index > nav,
+  header.drafts > nav {
     background-color: #000;
   }
 
@@ -175,9 +210,13 @@ article figure img {
     padding: 0;
   }
 
-  nav > ol > li > a {
-    color: #fff;
+  nav > ol > li > a,
+  nav > ol > li > span {
     text-decoration: none;
+  }
+
+  nav > ol > li > a:hover {
+    text-decoration: underline;
   }
 
   h1,
@@ -197,12 +236,6 @@ article figure img {
 
   main {
     max-width: 90%;
-    margin: auto;
-  }
-
-  article {
-    margin: 1rem auto 0 auto;
-    width: 94%;
   }
 
   article figure {

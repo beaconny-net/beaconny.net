@@ -8,4 +8,4 @@ Head = lambda context: (
 )
 
 
-Body = lambda context, page_type: header.Body(context, page_type)
+Body = lambda context, page_name: header.Body(context, page_name)

@@ -14,18 +14,25 @@ from lib.htmlephant import (
 )
 
 
-def Body(context, page_type):
+def Body(context, page_name):
     base_path = context["site"]["base_path"]
     title = context["site"]["title"]
     subtitle = context["site"]["subtitle"]
     return (
         Header(
-            _class=page_type,
+            _class=page_name,
             children=(
                 Nav(children=(
                     Ol(children=(
                         Li(children=(
-                            Anchor("home", href=base_path),
+                            (Anchor("home", href=base_path)
+                             if page_name != "index" else
+                             Span("home")),
+                        )),
+                        Li(children=(
+                            (Anchor("drafts", href=f"{base_path}/drafts")
+                             if page_name != "drafts" else
+                             Span("drafts")),
                         )),
                         Li(children=(
                             Anchor("beaconny.net", href="https://beaconny.net"),

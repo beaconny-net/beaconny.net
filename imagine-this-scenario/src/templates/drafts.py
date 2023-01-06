@@ -1,6 +1,7 @@
 
 from lib.htmlephant import (
     Main,
+    Paragraph,
     Section,
     Style,
     Title,
@@ -14,7 +15,7 @@ Head = lambda context: (
     Style(f"""
 @media screen and (min-width: 1024px) {{
   header {{
-    background-image: url("{context.image_url(site['header_background_image'])}");
+    background-image: url("{context.image_url(site['drafts_header_background_image'])}");
   }}
 }}
     """)
@@ -26,10 +27,11 @@ def Body(context):
     authors = context["authors"]
     return (
         Main(
-        _class="index",
+        _class="drafts",
         children=(
             Section(children=(
-                post_list.Body(context, (x for x in posts if not x["draft"]), authors),
+                Paragraph("In this spirit of thinking and writing in the open, these posts are in various states of development, from a stub of an idea to almost ready to publish."),
+                post_list.Body(context, (x for x in posts if x["draft"]), authors),
             )),
         )),
     )
