@@ -1,6 +1,5 @@
 
 from lib.frowntown import parse
-from lib.htmlephant_extensions import UnescapedSpan
 from lib.htmlephant import (
     Anchor,
     Em,
@@ -11,6 +10,10 @@ from lib.htmlephant import (
     Nav,
     Ol,
     Span
+)
+from lib.htmlephant_extensions import (
+    UnescapedAnchor,
+    UnescapedSpan,
 )
 
 
@@ -40,7 +43,7 @@ def Body(context, page_name):
                     )),
                 )),
                 H1(children=(
-                    UnescapedSpan(parse(title)),
+                    UnescapedAnchor(parse(title), href=base_path),
                 )),
                 H2(children=(
                     UnescapedSpan(parse(subtitle)),

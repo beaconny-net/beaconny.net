@@ -1,10 +1,15 @@
 
 from lib.htmlephant import (
+    Anchor,
     Div,
     HTMLElement,
     Paragraph,
     Span,
 )
+
+
+class UnescapedAnchor(Anchor):
+    ESCAPE_TEXT = False
 
 
 class UnescapedDiv(Div):
