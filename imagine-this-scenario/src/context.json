@@ -20,13 +20,26 @@
     {
       "draft": true,
       "author": "derekenos",
-      "datetime": "2023-01-02",
-      "header_background_image": "00901-3730104822-computer cloud internet.png",
-      "title": "Build Boats",
-      "slug": "2023-01-02-build-boats",
+      "datetime": "2023-01-13",
+      "header_background_image": "00924-2143117661-tool wall.png",
+      "title": "Beacon Builds",
+      "slug": "2023-01-13-beacon-builds",
       "blocks": [
-        "Our Main Street is populatred with shops that cater to toursists and those who want, and can afford, luxury goods. While my natural impulse is to speak out against this trivialization of our valuable commercial resources, what if we could figure out a way to stop fighting and start building, by working together to help everyone get what they want?",
-        "Locally-made products to sell at/to local business:",
+        "A proposal to activate the storefront next to Beacon Reads as an extension of the Howland's Library of Things, while also serving as a Repair Cafe, and community computing resources hub.",
+        "[![A Build Builds Storefront Mockup](images/beacon-builds-storefront-mockup.png)](images/beacon-builds-storefront-mockup.png)"
+      ]
+    },
+    {
+      "draft": true,
+      "author": "derekenos",
+      "datetime": "2023-01-02",
+      "header_background_image": "00922-1813468116-boats made out of money riding atop waves on the sea.png",
+      "title": "Ride the Tide",
+      "slug": "2023-01-02-ride-the-tide",
+      "blocks": [
+        "In some alternate universe, Beacon's Main Street is lined with shops owned and operated by locals, for locals - places for us to buy the regular things that we need and other, more specialized places that reflect our shared interests and hobbies. In this universe, we got novelty shops and luxury services that cater primarily to toursists. This city has a lot going for it, and the New York Times can't stop writing flattering puff pieces about it, so here we are.",
+        "I suspect that there's not much we can do about the current state of things on Main Street. The cat's out of the bag. What we can do is figure out a way to leverage the current state of things to the direct financial benefit of our community, namely by locally producing more of the goods that are sold by these shops.",
+        "I propose that, as part of a larger local manufacturing effort, we start making products specifically targeted at the clientele of the shops that we have.",
         "-[soap | oat milk | baked goods | dummy light statues | granola | kombucha]"
       ]
     },
@@ -51,6 +64,24 @@
         "For most, the Internet is a thing that runs out there, in _The Cloud_ &#8482;, on computers that they've never seen. But the dirty truth is that _The Cloud_ &#8482 is just someone elses' computers, and anyone can plug their computer in to become part of the Internet too! For example, check out this photograph of the [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi) computer that runs the [Kiwix](https://www.kiwix.org/en/) server at [knowledge.beaconny.net](http://knowledge.beaconny.net). Every time someone goes to that website, lights starting blinking in my basement - it's very exciting! I can make these computers do whatever I want, and you can too.",
 
         "## Conservation"
+      ]
+    },
+    {
+      "draft": true,
+      "author": "derekenos",
+      "datetime": "1999-09-09",
+      "header_background_image": "",
+      "title": "~ stubs ~",
+      "slug": "1999-09-09---stubs--",
+      "blocks": [
+        "## Build Lifeboats",
+        "[https://youtu.be/LQTuDttP2Yg?t=4555](https://youtu.be/LQTuDttP2Yg?t=4555)",
+        "## Beacon Owner's Manual",
+        "### Dear ___,",
+        "#### Congratulations on your purchase of _____, and welcome to our community!",
+        "This manual will provide you with information...",
+        "### Sincerely,",
+        "-[Derek Enos | ...]"
       ]
     },
     {

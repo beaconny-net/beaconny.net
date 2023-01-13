@@ -30,7 +30,7 @@ def Body(context):
         _class="drafts",
         children=(
             Section(children=(
-                Paragraph("In this spirit of thinking and writing in the open, these posts are in various states of development, from a stub of an idea to almost ready to publish."),
+                Paragraph("These posts are in various states of development."),
                 post_list.Body(context, (x for x in posts if x["draft"]), authors),
             )),
         )),
