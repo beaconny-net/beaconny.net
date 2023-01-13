@@ -1,0 +1,97 @@
+{
+  "site": {
+    "base_path": "/imagine-this-scenario",
+    "css_path": "/css",
+    "images_path": "/images",
+    "posts_path": "/",
+    "header_background_image": "header-background-grayscale.png",
+    "drafts_header_background_image": "00911-3514616341-the word DRAFTS.png",
+    "title": "Imagine _This_ Scenario",
+    "subtitle": "_Thoughts on the Future of Opportunity and Equity in Beacon, New York_"
+  },
+  "authors": {
+    "derekenos": {
+      "name": "Derek Enos",
+      "avatar_image": "de-avatar.webp",
+      "url": "https://derekenos.com"
+    }
+  },
+  "posts": [
+    {
+      "draft": true,
+      "author": "derekenos",
+      "datetime": "2023-01-02",
+      "header_background_image": "00901-3730104822-computer cloud internet.png",
+      "title": "Build Boats",
+      "slug": "2023-01-02-build-boats",
+      "blocks": [
+        "Our Main Street is populatred with shops that cater to toursists and those who want, and can afford, luxury goods. While my natural impulse is to speak out against this trivialization of our valuable commercial resources, what if we could figure out a way to stop fighting and start building, by working together to help everyone get what they want?",
+        "Locally-made products to sell at/to local business:",
+        "-[soap | oat milk | baked goods | dummy light statues | granola | kombucha]"
+      ]
+    },
+    {
+      "draft": true,
+      "author": "derekenos",
+      "datetime": "2022-12-30",
+      "header_background_image": "00901-3730104822-computer cloud internet.png",
+      "title": "The Rationale for Local Computing",
+      "slug": "2022-12-30-the-rationale-for-local-computing",
+      "blocks": [
+        "When I tell people that I'm building community-centric [websites and services](https://beaconny.net) that run on computers in my basement, they sometimes ask \"why not just use _[some existing service]_ ?\" I'll tell you why! All of the websites and online social networks that we depend on, e.g. Facebook, Twitter, Instagram, YouTube, TikTok, etc., run on computers that we don't control, that we access over networks that we also don't control. This means that anytime something goes wrong with the service or the network, we lose access to critical resources and tools. Let's break it down into categories.",
+
+        "## Dependability",
+        "A best practice in software development is to minimize reliance on third-party dependencies, which may become unavailable, or be modified in such a way that it breaks your stuff, at any time without your knowledge or approval. If we agree that digital services provide critical capabilities for our community, then we should establish a local backup, or reimplementation, of these systems in the event that they become unavailable or unreliable in the future.",
+
+        "## Data Security",
+        "https://www.nytimes.com/2022/12/31/technology/cloud-data-storage-google-apple-meta.html",
+
+        "## Empowerment",
+        "![The Rapberry Pi that runs knowledge.beaconny.net](images/knowledge-beaconny-net-server.jpg)",
+        "For most, the Internet is a thing that runs out there, in _The Cloud_ &#8482;, on computers that they've never seen. But the dirty truth is that _The Cloud_ &#8482 is just someone elses' computers, and anyone can plug their computer in to become part of the Internet too! For example, check out this photograph of the [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi) computer that runs the [Kiwix](https://www.kiwix.org/en/) server at [knowledge.beaconny.net](http://knowledge.beaconny.net). Every time someone goes to that website, lights starting blinking in my basement - it's very exciting! I can make these computers do whatever I want, and you can too.",
+
+        "## Conservation"
+      ]
+    },
+    {
+      "draft": false,
+      "author": "derekenos",
+      "datetime": "2022-12-29",
+      "header_background_image": "00881-60802327-maslow's hierarchy of needs pyramid.png",
+      "title": "Run It Like a Startup / The Hierarchy of Needs",
+      "slug": "2022-12-29-run-it-like-a-startup---the-hierarchy-of-needs",
+      "blocks": [
+        "For almost a decade, I worked at a small web tech startup called [Octopart](https://octopart.com/). We were a small team, and we got really good at identifying problems, setting goals, iterating toward solutions, and measuring our progress. Many tech startups share a similar story; a small group of folks leveraging technology to great effect toward some agreed-upon goals. Having had this experience, I'm often shocked at how bad our city government is at these same competencies, specifically when it comes to addressing the fundamental needs of our community.",
+
+        "While most startups exist primarily to generate revenue, which Beacon does excel at by increasing its tax base through its support of relentless development, a city government has a much more important responsibility. As a starting point for thinking about what types of things we should expect from our city government, let's take a look at [Maslow's Hierarchy of Needs](https://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs):",
+
+        "[![Maslow's Hierarchy of Needs](images/MaslowHierarchy.png)](https://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs)",
+
+        "The levels (best read from bottom to top) can be summarized as:",
+
+        "-[**Physiological** : basic needs like water, food, and shelter | **Safety** : the need for personal, emotional, and financial security | **Belonging and Love** : the need for family, friends, and community | **Esteem** : the need for self-worth and respect from others | **Cognitive** : the need to engage your creativity, curiosity, and the search meaning | **Aesthetic** : the need for beauty in nature, art, and yourself | **Self-actualization** : the need to realize your full potential | **Transcendence** : the need to focus on things beyond yourself]",
+
+        "While this Hierarchy is not meant to be strictly hierarchical, e.g. you can have some or all of your Belonging and Love needs met without having satisfied all of your Safety needs, it's generally true that each level enables, e.g. financially or psychologically, the levels above it. Many of us in Beacon probably have most of our Physiological needs met, but after that, a lot of us start falling off the pyramid. According to the latest data available from the New York State Education Department, [47% of all students](https://data.nysed.gov/enrollment.php?year=2020&instid=800000053483) enrolled in the Beacon City School District during the 2019 - 2020 school year were considered to be \"Economically Disadvantaged\", which [they define as](https://data.nysed.gov/glossary.php?report=assessment):",
+
+        ">(https://data.nysed.gov/glossary.php?report=assessment) ... those who participate in, or whose family participates in, economic assistance programs, such as the free or reduced-price lunch programs, Social Security Insurance (SSI), Food Stamps, Foster Care, Refugee Assistance (cash or medical assistance), Earned Income Tax Credit (EITC), Home Energy Assistance Program (HEAP), Safety Net Assistance (SNA), Bureau of Indian Affairs (BIA), or Family Assistance: Temporary Assistance for Needy Families (TANF).",
+
+        "High School Principal Corey Dwyer, at the December 12, 2022 Board of Education meeting, [indicated that 49% of Beacon High School students](https://go.boarddocs.com/ny/beacon/Board.nsf/files/CLXT8B718041/$file/BOE%20Presentation%20-%2012.12.22.pdf) meet this criteria. I'd venture to guess that there's more wealth in Beacon now than ever before in its history, yet the families of half of our school children lack basic financial security. While we can't expect our city government to be all things to all people, it should do everything in its power to help ensure that the basic Physiological and Safety needs of every Beacon resident are met.",
+
+        "Circling back to my experience at a startup, many companies have adopted a framework for defining measurable goals and tracking their outcomes called [OKRs (Objectives and key results)](https://en.wikipedia.org/wiki/OKR), and I suggest that our city government should do the same. From the Wikipedia article:",
+        ">(https://en.wikipedia.org/wiki/OKR) OKRs comprise an objective (a significant, concrete, clearly defined goal) and 3–5 key results (measurable success criteria used to track the achievement of that goal).",
+
+        "For example, we could establish an objective like:",
+
+        "-[Improve the safety and security of existing Beacon residents]",
+
+        "and define key results like:",
+
+        "-[100% decrease in Economically Disadvantaged households | 100% decrease in households with food insecurity | 100% decrease in residents without health insurance]",
+
+        "Our city government would then plan and execute on things that move us toward this goal, with periodic updates on how we're doing on each of the key results. Note that the inclusion of \"existing\" in the objective statement is very important - otherwise the city could simply intensify gentrification to the point where the economically disadvantaged population is fully displaced. As exemplified by Nick Bostrom's [Paperclip Maximizer](https://en.wikipedia.org/wiki/Instrumental_convergence#Paperclip_maximizer) thought experiment, it's important to consider the potential negative consequences of poorly-defined objectives.",
+
+        "Though all of us deserve the opportunity to pursue our fullest potential, it's difficult to do this when you're suffering from financial, housing, or food insecurity. To the extent that is possible and appropriate, we should expect our city government to do everything in its power to help ensure the safety and security of our community members."
+      ]
+    }
+  ]
+}
