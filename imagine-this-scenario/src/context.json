@@ -51,19 +51,28 @@
       "title": "The Rationale for Local Computing",
       "slug": "2022-12-30-the-rationale-for-local-computing",
       "blocks": [
-        "When I tell people that I'm building community-centric [websites and services](https://beaconny.net) that run on computers in my basement, they sometimes ask \"why not just use _[some existing service]_ ?\" I'll tell you why! All of the websites and online social networks that we depend on, e.g. Facebook, Twitter, Instagram, YouTube, TikTok, etc., run on computers that we don't control, that we access over networks that we also don't control. This means that anytime something goes wrong with the service or the network, we lose access to critical resources and tools. Let's break it down into categories.",
-
+        "When I tell people that I'm running [beaconny.net](https://beaconny.net) from computers in my basement, they usually ask \"why?\" - I'll tell you why!",
+        "<div style=\"clear: left;\"></div>",
+        "## All the Fancy Services",
+        "You know em, you love em, you can not live without them:",
+        "<img src=\"images/social-media-logos.png\" alt=\"logos of the most popular online social networks\" style=\"max-width: 100%; float: left; margin-right: 1rem;\">",
+        "But we're all just users of these services, with no control over, or visibility into, their operation, or any guarantees that they'll continue to work in the future. At any moment, any of these services could disappear and take all of its content and our social network with it.",
+        "From a software engineering perspective, there's nothing special about these platforms - an experienced developer could whip up a passable clone of any of these in a week's time. The real value is in the fact that people have agreed to use them, and as the ol' adage goes: <q cite=\"https://quoteinvestigator.com/2017/07/16/product/\">If you are not paying for it, you’re not the customer; you’re the product being sold.</q>",
+        "While I'm not suggesting that we all abandon the Internet at large and vow to use only hand-crafted, artisanal, local digital services, for the reasons detailed below, we should do what we can to ensure that our community can continue to leverage the tools of technology regardless of what the future may hold.",
         "## Dependability",
         "A best practice in software development is to minimize reliance on third-party dependencies, which may become unavailable, or be modified in such a way that it breaks your stuff, at any time without your knowledge or approval. If we agree that digital services provide critical capabilities for our community, then we should establish a local backup, or reimplementation, of these systems in the event that they become unavailable or unreliable in the future.",
-
-        "## Data Security",
-        "https://www.nytimes.com/2022/12/31/technology/cloud-data-storage-google-apple-meta.html",
 
         "## Empowerment",
         "![The Rapberry Pi that runs knowledge.beaconny.net](images/knowledge-beaconny-net-server.jpg)",
         "For most, the Internet is a thing that runs out there, in _The Cloud_ &#8482;, on computers that they've never seen. But the dirty truth is that _The Cloud_ &#8482 is just someone elses' computers, and anyone can plug their computer in to become part of the Internet too! For example, check out this photograph of the [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi) computer that runs the [Kiwix](https://www.kiwix.org/en/) server at [knowledge.beaconny.net](http://knowledge.beaconny.net). Every time someone goes to that website, lights starting blinking in my basement - it's very exciting! I can make these computers do whatever I want, and you can too.",
 
-        "## Conservation"
+        "## Revenge of the Nerds",
+
+        "## Data Security",
+        "https://www.nytimes.com/2022/12/31/technology/cloud-data-storage-google-apple-meta.html",
+
+        "## Conservation",
+        "## While We Still Can"
       ]
     },
     {
