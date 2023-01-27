@@ -2,3 +2,7 @@
 	path = imagine-this-scenario/src/lib/htmlephant
 	url = https://github.com/derekenos/htmlephant
 	branch = minimal
+[submodule "undercurrent/src/lib/htmlephant"]
+	path = undercurrent/src/lib/htmlephant
+	url = https://github.com/derekenos/htmlephant
+	branch = minimal

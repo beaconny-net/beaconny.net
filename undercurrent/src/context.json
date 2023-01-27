@@ -1,0 +1,31 @@
+{
+  "site": {
+    "base_path": "/undercurrent",
+    "css_path": "/css",
+    "images_path": "/images",
+    "posts_path": "/",
+    "header_background_image": "header-background-grayscale.png",
+    "title": "<span>The&nbsp;BEACON</span><span>Under</span><span>current</span>",
+    "subtitle": ""
+  },
+  "authors": {
+    "derekenos": {
+      "name": "Derek Enos",
+      "avatar_image": "de-avatar.webp",
+      "url": "https://derekenos.com"
+    }
+  },
+  "posts": [
+    {
+      "draft": false,
+      "author": "derekenos",
+      "datetime": "2023-01-13",
+      "header_background_image": "00924-2143117661-tool wall.png",
+      "title": "A Good Article",
+      "slug": "2023-01-13-beacon-builds",
+      "blocks": [
+        "This is a really good first article. You're crushing it!"
+      ]
+    }
+  ]
+}
