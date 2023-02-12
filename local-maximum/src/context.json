@@ -1,12 +1,12 @@
 {
   "site": {
-    "base_path": "/imagine-this-scenario",
+    "base_path": "/local-maximum",
     "css_path": "/css",
     "images_path": "/images",
     "posts_path": "/",
     "header_background_image": "header-background-grayscale.png",
     "drafts_header_background_image": "00911-3514616341-the word DRAFTS.png",
-    "title": "Imagine _This_ Scenario",
+    "title": "Local Maximum",
     "subtitle": "_Thoughts on the Future of Opportunity and Equity in Beacon, New York_"
   },
   "authors": {

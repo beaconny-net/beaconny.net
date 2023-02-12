@@ -1,4 +1,4 @@
 [submodule "imagine-this-scenario/src/lib/htmlephant"]
-	path = imagine-this-scenario/src/lib/htmlephant
+	path = local-maximum/src/lib/htmlephant
 	url = https://github.com/derekenos/htmlephant
 	branch = minimal

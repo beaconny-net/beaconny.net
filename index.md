@@ -28,7 +28,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
       </td>
       <td>
         <h4><a href="http://computing.beaconny.net">Beacon Computing Club</a></h4>
-        Learn, share, discuss, and collaborate on all things computers, programming, and technology.      
+        Learn, share, discuss, and collaborate on all things computers, programming, and technology.
       </td>
     </tr>
   </table>
@@ -112,7 +112,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 
 ## Blogs
 
-- [Imagine _This_ Scenario](https://beaconny.net/imagine-this-scenario/)
+- [Local Maximum](https://beaconny.net/local-maximum/)
   - Thoughts on the Future of Opportunity and Equity in Beacon, New York
 
 ## Proposals
