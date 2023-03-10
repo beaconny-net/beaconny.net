@@ -4,7 +4,53 @@ Collected information about past and possible future efforts to create a Communi
 
 ## Past Efforts
 
-### The MLK Center
+<details><summary>Click to read a 2020 Highlands Current article that discusses past Community Center efforts ([source](https://highlandscurrent.org/2020/11/27/reporters-notebook-does-beacon-need-a-community-center/))</summary>
+
+#### Reporter’s Notebook: Does Beacon Need a Community Center?
+
+##### _By Jeff Simms, Beacon Editor | November 27, 2020_
+
+The Beacon City Council next month is expected to adopt a 2021 budget that includes $22.2 million in general spending and keeps property taxes flat. 
+
+Much of the dialogue over the proposal has focused on police spending, which, at $5.9 million, accounts for about 26 percent of city costs but will not increase substantially over 2020. 
+
+During an hourlong public hearing on Nov. 16, most residents who spoke echoed a similar thought: Let’s spend less on policing and more on recreation, food distribution, internet access and other programs that would create a more equitable distribution of municipal services. (Parks and recreation, at about $762,000, accounts for 3 percent of general spending.)
+
+Throughout 2020, I’ve heard many residents say at City Council and school board meetings and other forums that a city-run, central facility — a recreation or community center — is something Beacon has needed for years. 
+
+At the moment, a newly constructed facility would be a heavy lift for any municipality given the uncertainty over state aid because of the pandemic shutdown. But the city did once have two facilities — the Martin Luther King Cultural Center on South Avenue, from 1969 to 2011, and the Beacon Community Center, which operated for decades from what is now the Recreation Department building on West Center Street. 
+
+However, neither facility was run by the city — the Martin Luther King center was a nonprofit and the Beacon Community Center leased space from the city, although the city at times supported both with grant funds, said Mark Price, the director of the Beacon Recreation Department.
+
+John Galloway Jr., a 2015 Beacon High School graduate who was appointed last month to fill a vacancy on the Beacon school board, has advocated a community center in part because he attended both facilities while growing up.
+
+“It was like home, man,” he said about the Beacon Community Center. “It instilled that mentorship that kids in Beacon really need. I still talk to my [BCC] counselors today.”
+
+Galloway said the center provided an afterschool program where counselors helped children with homework and played basketball or other games with them. On weekends, the center had boys’ and girls’ nights. 
+
+“They touched every base,” he said. “Every Friday night you knew you were going to the BCC.”
+
+Barbara McCaskill, who worked at the MLK center from 2003 to 2006, said she was recruited by Eleanor Thompson, the first African American woman to serve on the Beacon City Council. McCaskill described similar programming, with homework help after school and exercise, plays and other group activities. Both centers offered summer programs, as well. 
+
+Although the children and teens who visited the MLK center were mostly African American, McCaskill said the programming was all-inclusive. “We were adamant that it was for the entire community,” she said. 
+
+The city has tried to fill some of the gaps left when the centers closed by establishing an afterschool program that’s in three of the Beacon district’s elementary schools and assuming management of the University Settlement site, now home of the summer Camp @ the Camp and the municipal pool, Price noted. All relatively recent, that represented a lot of growth for an agency that was barely a real city department when he started as a part-time employee in 2008. “It’s a long, slow slog uphill,” he said. 
+
+While discussing the 2021 budget, members of the council have talked about holding “listening sessions” or creating surveys to assess the community’s recreation needs. “It’s about asking the questions and evaluating the resources we have,” said City Administrator Anthony Ruggiero. 
+
+And while a new building would almost surely be cost-prohibitive, Mayor Lee Kyriacou has floated other options, such as expanded programming at the 50-acre University Settlement, the under-utilized Memorial Building on Main Street and even the Mase Hook and Ladder fire station (also on Main), a building that will one day be available as the city consolidates its firehouses. 
+
+For years, Beacon officials debated whether (and where) to build a new, central fire station. “Thinking ‘only new’ is understandable,” Kyriacou said, “but what we have found is we can facilitate all our needs” by improving the Tompkins Hose station on South Avenue for less than half the cost of a new building. 
+
+The same approach could be taken with a community center. 
+
+“We have lots of opportunities to figure out how to leverage that,” he said. “If we do it effectively, we can make those dollars go a lot farther.”
+</details>
+
+### Martin Luther King Cultural Center
+
+The Martin Luther King Cultural Center was located at ??? South Ave and was in operation from 1969 to 2011 (source)
+
 
 ...TODO...
 
