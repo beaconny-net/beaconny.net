@@ -115,6 +115,15 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 - [Local Maximum](https://beaconny.net/local-maximum/)
   - Thoughts on the Future of Opportunity and Equity in Beacon, New York
 
+
+## User Pages
+
+<details><summary>Click to expand</summary>
+
+- [derekenos](+derekenos)
+
+</details>
+
 ## Proposals
 
 - [Interface Research Lab](https://irl.beaconny.net/)
