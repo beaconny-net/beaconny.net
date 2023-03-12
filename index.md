@@ -118,9 +118,10 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 
 ## User Pages
 
-<details><summary>Click to expand</summary>
+<details>
+  <summary>Click to expand</summary>
 
-- [derekenos](+derekenos)
+  - [derekenos](+derekenos)
 
 </details>
 
