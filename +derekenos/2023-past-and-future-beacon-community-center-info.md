@@ -10,7 +10,7 @@ Collected information about past and possible future efforts to create a Communi
   </summary>
 
   <blockquote cite="https://highlandscurrent.org/2020/11/27/reporters-notebook-does-beacon-need-a-community-center/">
-
+    <br>
     <h4>Reporter’s Notebook: Does Beacon Need a Community Center?</h4>
 
     <h5><em>By Jeff Simms, Beacon Editor | November 27, 2020</em></h5>
@@ -91,7 +91,7 @@ The Beacon Community Resource Center was located at 23 West Center Street (the c
   </summary>
 
   <blockquote cite="https://beacon.blogs.com/beacon_dispatch/2006/10/beacon_voices_m.html">
-
+    <br>
     <h4>Beacon Voices: Michelle Rhone-Collins</h4>
 
     <h5>Community Builder</h5>
