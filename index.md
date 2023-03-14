@@ -121,7 +121,11 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 <details>
   <summary>Click to expand</summary>
 
+  <p>
+
   - [derekenos](+derekenos)
+  
+  </p>
 
 </details>
 
