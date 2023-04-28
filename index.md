@@ -39,6 +39,20 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 <table>
   <tr>
     <td>
+      <a href="https://files.beaconny.net">
+        <img src="/images/files-beaconny-net-screenshot.png" width="250">
+      </a>
+    </td>
+    <td>
+      <h4><a href="https://files.beaconny.net">Files</a></h4>
+      A shared, local place to store and access public files. (<i>currently read-only</i>)
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
       <a href="https://govdocs.beaconny.net/search/index.html?q=">
         <img src="https://user-images.githubusercontent.com/585182/205776225-d6d0e6ab-7634-41e5-92f6-d183ef45d44c.png" width="250">
       </a>
