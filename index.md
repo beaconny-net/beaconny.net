@@ -67,24 +67,6 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 <table>
   <tr>
     <td>
-      <a href="https://txt2img.beaconny.net/">
-        <img src="https://user-images.githubusercontent.com/585182/205099621-4e775d70-38be-4aa2-a625-a5e47daedc4b.png" width="250">
-      </a>
-    </td>
-    <td>
-      <h4><a href="https://txt2img.beaconny.net/">AI Image Generator</a></h4>
-      Use the <a href="https://en.wikipedia.org/wiki/Stable_Diffusion">Stable Diffusion</a> model to turn text descriptions into images.
-      <br>
-      user: <strong>beacon</strong>
-      <br>
-      pass: <strong>computing</strong>
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td>
       <a href="https://git.beaconny.net/">
         <img src="https://user-images.githubusercontent.com/585182/205101511-5cb9ca8d-b049-409e-8237-0cbd3f95ffeb.png" width="250">
       </a>
@@ -92,20 +74,6 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
     <td>
       <h4><a href="https://git.beaconny.net/">Gitlab</a></h4>
       A platform for source code revision tracking, collaboration, and automation.
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td>
-      <a href="https://poll.beaconny.net/home">
-        <img src="https://user-images.githubusercontent.com/585182/205103527-e47f8b73-0315-4a51-83f5-68c160f4069f.png" width="250">
-      </a>
-    </td>
-    <td>
-      <h4><a href="https://poll.beaconny.net/home">Polis</a></h4>
-      A public opinion collection and analysis platform.
     </td>
   </tr>
 </table>
@@ -156,16 +124,55 @@ Projects are funded by the [Beacon Community Network](https://opencollective.com
 
 ## Previous Services
 
-<table>
-  <tr>
-    <td>
-      <a href="https://home-covid-test-finder.beaconny.net/">
-        <img src="https://user-images.githubusercontent.com/585182/205453514-5da7eb69-e5a6-4ee1-a7d6-69cd49adf5e3.png" width="250">
-      </a>
-    </td>
-    <td>
-      <h4><a href="https://home-covid-test-finder.beaconny.net/">COVID Home Test Stock Locator</a></h4>
-      A periodically updated inventory of in-stock COVID home tests at CVS stores near Beacon.
-    </td>
-  </tr>
-</table>
+These services were either no longer useful, or underutilized.
+
+<details>
+  <summary>Click to expand</summary>
+
+  <table>
+    <tr>
+      <td>
+        <a href="https://home-covid-test-finder.beaconny.net/">
+          <img src="https://user-images.githubusercontent.com/585182/205453514-5da7eb69-e5a6-4ee1-a7d6-69cd49adf5e3.png" width="250">
+        </a>
+      </td>
+      <td>
+        <h4><a href="https://home-covid-test-finder.beaconny.net/">COVID Home Test Stock Locator</a></h4>
+        A periodically updated inventory of in-stock COVID home tests at CVS stores near Beacon.
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>
+        <a href="https://txt2img.beaconny.net/">
+          <img src="https://user-images.githubusercontent.com/585182/205099621-4e775d70-38be-4aa2-a625-a5e47daedc4b.png" width="250">
+        </a>
+      </td>
+      <td>
+        <h4><a href="https://txt2img.beaconny.net/">AI Image Generator</a></h4>
+        Use the <a href="https://en.wikipedia.org/wiki/Stable_Diffusion">Stable Diffusion</a> model to turn text descriptions into images.
+        <br>
+        user: <strong>beacon</strong>
+        <br>
+        pass: <strong>computing</strong>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>
+        <a href="https://poll.beaconny.net/home">
+          <img src="https://user-images.githubusercontent.com/585182/205103527-e47f8b73-0315-4a51-83f5-68c160f4069f.png" width="250">
+        </a>
+      </td>
+      <td>
+        <h4><a href="https://poll.beaconny.net/home">Polis</a></h4>
+        A public opinion collection and analysis platform.
+      </td>
+    </tr>
+  </table>
+
+</details>
