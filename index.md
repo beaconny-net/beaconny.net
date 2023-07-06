@@ -16,25 +16,21 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 
 ## Services
 
-### Runs in the Cloud™️
-
-<p>
-  <table>
-    <tr>
-      <td>
-        <a href="http://computing.beaconny.net">
-          <img src="https://user-images.githubusercontent.com/585182/205097242-26f17ad5-5ae4-407d-8717-48ef1f3fcf36.png" width="250">
-        </a>
-      </td>
-      <td>
-        <h4><a href="http://computing.beaconny.net">Beacon Computing Club</a></h4>
-        Learn, share, discuss, and collaborate on all things computers, programming, and technology.
-      </td>
-    </tr>
-  </table>
-</p>
-
 ### Runs on Computers in Beacon
+
+<table>
+  <tr>
+    <td>
+      <a href="http://computing.beaconny.net">
+        <img src="https://user-images.githubusercontent.com/585182/205097242-26f17ad5-5ae4-407d-8717-48ef1f3fcf36.png" width="250">
+      </a>
+    </td>
+    <td>
+      <h4><a href="http://computing.beaconny.net">Beacon Computing Club</a></h4>
+      Learn, share, discuss, and collaborate on all things computers, programming, and technology.
+    </td>
+  </tr>
+</table>
 
 <table>
   <tr>
