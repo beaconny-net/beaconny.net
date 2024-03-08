@@ -114,10 +114,6 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 - [Beacon Correctional Facility Redevelopment](https://irl.beaconny.net/beacon-correctional-facility-proposal)
   - A concept for how this property could be leveraged to the educational, economic, and ecological benefit of our community.
 
-## Funding
-
-Projects are funded by the [Beacon Community Network](https://opencollective.com/beacon-community-network) 501(c)(3). If you'd like to support our projects, please [**donate here**](https://opencollective.com/beacon-community-network/contribute).
-
 ## Previous Services
 
 These services were either no longer useful, or underutilized.
