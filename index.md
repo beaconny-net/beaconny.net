@@ -56,7 +56,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
     </td>
     <td style="width: 100%;">
       <h4><a href="https://govdocs.beaconny.net/search/index.html?q=">City of Beacon Document Archive</a></h4>
-      A fast, searchable archive of local public records.
+      A fast, searchable archive of local public records. <em>This is still in its prototype stage and only includes data for the years 2016 - 2020.</em>
     </td>
   </tr>
 </table>
