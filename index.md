@@ -21,13 +21,14 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
 <table>
   <tr>
     <td>
-      <a href="http://computing.beaconny.net">
-        <img src="https://user-images.githubusercontent.com/585182/205097242-26f17ad5-5ae4-407d-8717-48ef1f3fcf36.png" width="250">
+      <a href="http://future.beaconny.net">
+        <img src="/images/future-beaconny-net-screenshot.png" width="250">
       </a>
     </td>
     <td>
-      <h4><a href="http://computing.beaconny.net">Beacon Computing Forum</a></h4>
-      Learn, share, discuss, and collaborate on all things computers, programming, and technology.
+      <h4><a href="http://future.beaconny.net">Beacon Future Forum</a></h4>
+      A place to discuss and coordinate on the creation of new local resources, opportunities, and capabilities.
+      <em>Currently invite-only; please email <a href="mailto:future-invite@beaconny.net">future-invite@beaconny.net</a> for an invitation.</em>
     </td>
   </tr>
 </table>
@@ -120,6 +121,20 @@ These services were either no longer useful, or underutilized.
 
 <details>
   <summary>Click to expand</summary>
+
+  <table>
+    <tr>
+      <td>
+        <a href="http://computing.beaconny.net">
+          <img src="https://user-images.githubusercontent.com/585182/205097242-26f17ad5-5ae4-407d-8717-48ef1f3fcf36.png" width="250">
+        </a>
+      </td>
+      <td>
+        <h4><a href="http://computing.beaconny.net">Beacon Computing Forum</a></h4>
+        Learn, share, discuss, and collaborate on all things computers, programming, and technology.
+      </td>
+    </tr>
+  </table>
 
   <table>
     <tr>
