@@ -22,7 +22,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
   <tr>
     <td>
       <a href="http://future.beaconny.net">
-        <img src="/images/future-beaconny-net-screenshot.png" style="min-width: 250px; max-width: 250px;">
+        <img src="/images/future-beaconny-net-screenshot.png" style="width: 250px; max-width: 35vw;">
       </a>
     </td>
     <td style="width: 100%;">
@@ -37,7 +37,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
   <tr>
     <td>
       <a href="https://files.beaconny.net">
-        <img src="/images/files-beaconny-net-screenshot.png" style="min-width: 250px; max-width: 250px;">
+        <img src="/images/files-beaconny-net-screenshot.png" style="width: 250px; max-width: 35vw;">
       </a>
     </td>
     <td style="width: 100%;">
@@ -51,7 +51,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
   <tr>
     <td>
       <a href="https://govdocs.beaconny.net/search/index.html?q=">
-        <img src="https://user-images.githubusercontent.com/585182/205776225-d6d0e6ab-7634-41e5-92f6-d183ef45d44c.png" style="min-width: 250px; max-width: 250px;">
+        <img src="https://user-images.githubusercontent.com/585182/205776225-d6d0e6ab-7634-41e5-92f6-d183ef45d44c.png" style="width: 250px; max-width: 35vw;">
       </a>
     </td>
     <td style="width: 100%;">
@@ -65,7 +65,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
   <tr>
     <td>
       <a href="https://git.beaconny.net/">
-        <img src="https://user-images.githubusercontent.com/585182/205101511-5cb9ca8d-b049-409e-8237-0cbd3f95ffeb.png" style="min-width: 250px; max-width: 250px;">
+        <img src="https://user-images.githubusercontent.com/585182/205101511-5cb9ca8d-b049-409e-8237-0cbd3f95ffeb.png" style="width: 250px; max-width: 35vw;">
       </a>
     </td>
     <td style="width: 100%;">
@@ -79,7 +79,7 @@ beaconny.net is maintained by members of the <a href="http://computing.beaconny.
   <tr>
     <td>
       <a href="https://knowledge.beaconny.net/?lang=eng">
-        <img src="https://user-images.githubusercontent.com/585182/205103782-1d387146-3431-4472-b9ed-89cf9fd4c32d.png" style="min-width: 250px; max-width: 250px;">
+        <img src="https://user-images.githubusercontent.com/585182/205103782-1d387146-3431-4472-b9ed-89cf9fd4c32d.png" style="width: 250px; max-width: 35vw;">
       </a>
     </td>
     <td style="width: 100%;">
@@ -126,7 +126,7 @@ These services were either no longer useful, or underutilized.
     <tr>
       <td>
         <a href="http://computing.beaconny.net">
-          <img src="https://user-images.githubusercontent.com/585182/205097242-26f17ad5-5ae4-407d-8717-48ef1f3fcf36.png" style="min-width: 250px; max-width: 250px;">
+          <img src="https://user-images.githubusercontent.com/585182/205097242-26f17ad5-5ae4-407d-8717-48ef1f3fcf36.png" style="width: 250px; max-width: 35vw;">
         </a>
       </td>
       <td style="width: 100%;">
@@ -140,7 +140,7 @@ These services were either no longer useful, or underutilized.
     <tr>
       <td>
         <a href="https://home-covid-test-finder.beaconny.net/">
-          <img src="https://user-images.githubusercontent.com/585182/205453514-5da7eb69-e5a6-4ee1-a7d6-69cd49adf5e3.png" style="min-width: 250px; max-width: 250px;">
+          <img src="https://user-images.githubusercontent.com/585182/205453514-5da7eb69-e5a6-4ee1-a7d6-69cd49adf5e3.png" style="width: 250px; max-width: 35vw;">
         </a>
       </td>
       <td style="width: 100%;">
@@ -154,7 +154,7 @@ These services were either no longer useful, or underutilized.
     <tr>
       <td>
         <a href="https://txt2img.beaconny.net/">
-          <img src="https://user-images.githubusercontent.com/585182/205099621-4e775d70-38be-4aa2-a625-a5e47daedc4b.png" style="min-width: 250px; max-width: 250px;">
+          <img src="https://user-images.githubusercontent.com/585182/205099621-4e775d70-38be-4aa2-a625-a5e47daedc4b.png" style="width: 250px; max-width: 35vw;">
         </a>
       </td>
       <td style="width: 100%;">
@@ -172,7 +172,7 @@ These services were either no longer useful, or underutilized.
     <tr>
       <td>
         <a href="https://poll.beaconny.net/home">
-          <img src="https://user-images.githubusercontent.com/585182/205103527-e47f8b73-0315-4a51-83f5-68c160f4069f.png" style="min-width: 250px; max-width: 250px;">
+          <img src="https://user-images.githubusercontent.com/585182/205103527-e47f8b73-0315-4a51-83f5-68c160f4069f.png" style="width: 250px; max-width: 35vw;">
         </a>
       </td>
       <td style="width: 100%;">
