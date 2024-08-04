@@ -11,7 +11,7 @@ _Looking for the [Official City of Beacon Website](https://beaconny.gov)? &larr;
 
 ## About
 
-beaconny.net is maintained by members of the <a href="http://computing.beaconny.net">Beacon Computing Forum</a> as a place for local digital content and as a platform for web technology education and experimentation.
+beaconny.net is maintained by members of the <a href="http://future.beaconny.net">Beacon Future Forum</a> as a place for local digital content and as a platform for web technology education and experimentation.
 
 
 ## Services
