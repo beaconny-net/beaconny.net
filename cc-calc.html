@@ -45,6 +45,11 @@
      input[type="number"] {
        -moz-appearance: textfield;
      }
+
+     button {
+       font-size: 2rem;
+       float: right;
+     }
     </style>
 
     <script>
@@ -97,6 +102,12 @@
 
        saleAmount.addEventListener("focus", e => e.target.select());
 
+       document.querySelector("button").addEventListener("click", () => {
+         saleAmount.value = "0.00"
+         ccAmount.value = "0.00";
+         saleAmount.focus()
+       });
+
      }
      document.addEventListener("DOMContentLoaded", init);
     </script>
@@ -116,6 +127,7 @@
           $<input type="number" min="0" step="0.01" value="0.00">
         </p>
       </label>
+      <button>Clear</button>
     </div>
   </body>
 </html>
