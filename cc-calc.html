@@ -97,7 +97,7 @@
 
        saleAmount.addEventListener("input", e => {
          const { value } = e.target;
-         ccAmount.value = calc(Number(value));
+         ccAmount.value = calc(Number(value)).toFixed(2);
        });
 
        saleAmount.addEventListener("focus", e => e.target.select());
