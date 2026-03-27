@@ -1,0 +1,3 @@
+## Local Communications Mesh
+
+Beacon has an existing network of digital communication devices that work together to create a resilient, low-power encrypted text messaging infrastructure. These devices primarily use a technology called [Meshtastic](https://meshtastic.org/), which combines [LoRa radios](https://en.wikipedia.org/wiki/LoRa) and custom software to provide seemless interoperation between [compatible devices](https://meshtastic.org/docs/hardware/devices/).
