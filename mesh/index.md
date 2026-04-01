@@ -1,12 +1,14 @@
-# Local Emergency Communication Network
-
-This page will introduce the concept of a local communication network, bring you up-to-speed on where we're at, and provide information on how to get involved.
+# Local Communication Network
 
 ## The Problem
 
-Recently, in January 2026, Verizon suffered a nationwide cell phone service outage that lasted the better part of a day. This got me to thinking about how fragile these centralized communication can be, how much we depend on them, and how useless our phones are without them.
+Recently, in January 2026, Verizon suffered a system-wide cell phone service outage that lasted the better part of a day. During this time, (non-WiFi-connected) Verizon phones completely lost their ability to call or text. These outages usually last a short time, amounting to little more than an inconvenience for most. But what if it lasted longer, or indefinitely? If this were to happen, our cell phones would become useless as mobile communication devices, and our ability to communicate with each other would be much degraded.
+
+Put simply, the main problem is that our cell phones depend on radio communication networks over which we have no control.
 
 ## A Solution
+
+A potential solution to this problem is to create an alternative radio communication network, an increasingly popular technology called Meshtastic allows us to do exactly that. By pairing your phone to one of these devices (Bluetooth or WiFi), you're able to send and receive fully-encryoted text messages direcly over the air with other Meshtastic users.
 
 As described on [meshtastic.org](https://meshtastic.org/), Meshtastic is:
 
@@ -14,11 +16,11 @@ As described on [meshtastic.org](https://meshtastic.org/), Meshtastic is:
 
 For those not well-versed in technobabble:
 
-- "open source" : all of the software code and electronics designs are freely available to read and modify as you wish
+- "open source" : All of the design files and software code you need to manufacture and program the Meshtastic devices is freely available for anyone to read and use.
 
-- "off-grid" : does not require use of the electricity grid
+- "off-grid" : These low-power devices can be run from a solar panel or battery and do not require access to the electrical grid.
 
-- "decentralized" : does not depend on any one entity for it to work
+- "decentralized" : The network is a result of many devices working together, with each device playing a more or less equal role (see: [Roles](https://meshtastic.org/docs/configuration/radio/device/#roles)), so there's no one "central" device that if turned off would cause the network to stop working. 
 
 - "mesh network" : it's a relay network in which devices communicate with its neighboring devices to create a larger effective network
 
