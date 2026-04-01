@@ -16,16 +16,17 @@ As described on [meshtastic.org](https://meshtastic.org/), Meshtastic is:
 
 For those not well-versed in technobabble:
 
-- "open source" : All of the design files and software code you need to manufacture and program the Meshtastic devices is freely available for anyone to read and use.
+- **open source** : All of the design files and software code you need to manufacture and program the Meshtastic devices is freely available for anyone to read and use.
 
-- "off-grid" : These low-power devices can be run from a solar panel or battery and do not require access to the electrical grid.
+- **off-grid** : These low-power devices can be run from a solar panel or battery and do not require access to the electrical grid.
 
-- "decentralized" : The network is a result of many devices working together, with each device playing a more or less equal role (see: [Roles](https://meshtastic.org/docs/configuration/radio/device/#roles)), so there's no one "central" device that if turned off would cause the network to stop working. 
+- **decentralized** : The network is a result of many devices working together, with each device playing a more or less equal role (see: [Roles](https://meshtastic.org/docs/configuration/radio/device/#roles)), so there's no one "central" device that if turned off would cause the network to stop working. 
 
-- "mesh network" : it's a relay network in which devices communicate with its neighboring devices to create a larger effective network
+- **mesh network** : Each device can act as a relay by retransmitting messages that it receives that are not addressed to the device itself. It's kind of like if you get someone else's piece of mail, e.g. a letter, delivered to your house, you would just put it in your neighbor's mailbox, and they would put it in the next neighbor's mailbox, until it eventually gets to the right address. And because messages are encrypted, even if one of the neighbors opened up the mail to see what's inside, they wouldn't be able to read it.  
 
-- affordable, low-power devices = ...
-- peer-to-peer connectivity = ...
+- **affordable, low-power devices** : Barebones Meshtastic cicuit boards [start at around $20](https://heltec.org/product-category/lora/meshtastic/).
+
+- **peer-to-peer connectivity** : Any two devices can communicate directly to one another; you don't need a whole mesh network.
 
 <hr>
 
