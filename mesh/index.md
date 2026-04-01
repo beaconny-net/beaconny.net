@@ -26,7 +26,7 @@ For those not well-versed in technobabble:
 
 - **affordable, low-power devices** : Barebones Meshtastic cicuit boards [start at around $20](https://heltec.org/product-category/lora/meshtastic/).
 
-- **peer-to-peer connectivity** : Any two devices can communicate directly to one another; you don't need a whole mesh network.
+- **peer-to-peer connectivity** : Any two devices can communicate directly with one another. You don't need a whole mesh network for it to work.
 
 <hr>
 
