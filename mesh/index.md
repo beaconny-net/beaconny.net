@@ -2,13 +2,13 @@
 
 ## The Problem
 
-Recently, in January 2026, Verizon suffered a system-wide cell phone service outage that lasted the better part of a day. During this time, (non-WiFi-connected) Verizon phones completely lost their ability to call or text. These outages usually last a short time, amounting to little more than an inconvenience for most. But what if it lasted longer, or indefinitely? If this were to happen, our cell phones would become useless as mobile communication devices, and our ability to communicate with each other would be much degraded.
+Recently, in January 2026, Verizon suffered a system-wide cell phone service outage that lasted the better part of a day. During this time, (non-WiFi-connected) Verizon phones completely lost their ability to call or text. These outages usually last a short time, amounting to little more than an inconvenience for most, but what if it lasted longer, or indefinitely? If this were to happen, our cell phones would become useless as mobile communication devices, and our ability to communicate with each other would be much degraded.
 
-Put simply, the main problem is that our cell phones depend on radio communication networks over which we have no control.
+Put simply, our cell phones depend on radio communication networks that may stop working at any time.
 
 ## A Solution
 
-A potential solution to this problem is to create an alternative radio communication network, an increasingly popular technology called Meshtastic allows us to do exactly that. By pairing your phone to one of these devices (Bluetooth or WiFi), you're able to send and receive fully-encryoted text messages direcly over the air with other Meshtastic users.
+One solution to this problem is for us to create our own community-run radio communication network over which our cell phones, and other screened devices, can use for continued communication in the event of a cell and/or Internet service outage. Each Meshtsatic device contains a radio transceiver (transmitter + receiver) that allows it to talk to other Meshtastic devices. By pairing your phone to one of these devices (Bluetooth or WiFi), you're able to send and receive fully-encryoted text messages direcly over the air with other Meshtastic users.
 
 ![meshtastic](/uploads/deb0794cb21fadb067d4fb512096856c/meshtastic.gif)
 
