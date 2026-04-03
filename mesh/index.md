@@ -8,7 +8,7 @@ Put simply, our cell phones depend on radio communication networks that may stop
 
 ## A Solution
 
-One solution to this problem is for us to create our own community-run radio communication network over which our cell phones, and other screened devices, can use for continued communication in the event of a cell and/or Internet service outage. Each Meshtsatic device contains a radio transceiver (transmitter + receiver) that allows it to talk to other Meshtastic devices. By pairing your phone to one of these devices (Bluetooth or WiFi), you're able to send and receive fully-encryoted text messages direcly over the air with other Meshtastic users.
+One solution to this problem is for us to create our own community-run radio communication network over which our cell phones, and other screened devices, can use for continued communication in the event of a cell and/or Internet service outage. Each Meshtsatic device contains a radio transceiver (transmitter + receiver) that allows it to talk to other Meshtastic devices. By pairing your phone to one of these devices via Bluetooth or WiFi, you're able to send and receive encrypted text messages direcly over the air with other Meshtastic users.
 
 ![meshtastic](/uploads/deb0794cb21fadb067d4fb512096856c/meshtastic.gif)
 
@@ -30,7 +30,25 @@ For those not well-versed in technobabble:
 
 - **peer-to-peer connectivity** : Any two devices can communicate directly with one another. You don't need a whole mesh network for it to work.
 
-<hr>
+## Other Technologies
 
-Beacon has an existing infrastructure of digital communication devices that work together to create a resilient, low-power encrypted text messaging network. These devices primarily use a technology called [Meshtastic](https://meshtastic.org/), which combines [LoRa radios](https://en.wikipedia.org/wiki/LoRa) and custom software to provide seemless interoperation between [compatible devices](https://meshtastic.org/docs/hardware/devices/). While some of these devices include a keyboard and display for use as a standalone text messaging device, most are designed to be controlled over Bluetooth or WiFi via the Mestastic app on a smartphone ([Android](https://play.google.com/store/apps/details?id=com.geeksville.mesh), [iOS](https://apps.apple.com/us/app/meshtastic/id1586432531)), tablet, or [computer](https://client.meshtastic.org/).
+In addition to Meshastic, many of the same radio devices can be reprogrammed to function as nodes in the following alternative network types:
+
+### [Meshcore](https://meshcore.co.uk/)
+
+Meshcore is similar to Meshtastic in many ways, but requires dedicated repeater devices that must be maintained as citical network infrastructure, whereas in Meshtastic, almost every device functions as a repeater, allowing the network to dynamically recongiure based on available nodes. The upside to Meshcore is that it's more efficient and reliable than Meshtastic.
+
+From the Seeed [Studio MeshCore or Meshtastic: Which one is better?](https://www.seeedstudio.com/blog/2026/03/23/meshcore-vs-meshtastic/) blog post:
+
+- **Choose Meshtastic** if you need a plug-and-play, collective network for hiking, skiing, or tactical teams where every device is a team player.
+
+- **Choose MeshCore** if you are building a robust, high-capacity urban backbone that requires massive hop counts and dedicated infrastructure without the noise.
+
+### [Reticulum](https://reticulum.network/)
+
+Reticulum differs from Meshtastic / Meshcore in that it's a general networking stack that, beyond just text messages, can basically do anything that you can do over the Internet (e.g. email, images, websites, voice chat).
+
+From [the Reticulum website](https://reticulum.network):
+
+> Reticulum is the cryptography-based networking stack for building local and wide-area networks with readily available hardware. Reticulum can continue to operate even in adverse conditions with very high latency and extremely low bandwidth.
 
