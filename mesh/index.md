@@ -1,4 +1,4 @@
-# Local Communication Network
+# Community Texting Network
 
 ## The Problem
 
@@ -9,6 +9,8 @@ Put simply, the main problem is that our cell phones depend on radio communicati
 ## A Solution
 
 A potential solution to this problem is to create an alternative radio communication network, an increasingly popular technology called Meshtastic allows us to do exactly that. By pairing your phone to one of these devices (Bluetooth or WiFi), you're able to send and receive fully-encryoted text messages direcly over the air with other Meshtastic users.
+
+![meshtastic](/uploads/deb0794cb21fadb067d4fb512096856c/meshtastic.gif)
 
 As described on [meshtastic.org](https://meshtastic.org/), Meshtastic is:
 
