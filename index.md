@@ -102,7 +102,7 @@ beaconny.net is maintained by members of the <a href="http://future.beaconny.net
 
   <p>
     <ul>
-      <li><a href="~derekenos">derekenos</a></li>
+      <li><a href="+derekenos">derekenos</a></li>
     </ul>
   </p>
 
