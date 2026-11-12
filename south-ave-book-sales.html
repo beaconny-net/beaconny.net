@@ -62,6 +62,14 @@
     border-radius: 14px; background: #d62828; color: #fff; text-align: left;
     font-weight: 800; font-size: 1.05rem; letter-spacing: .02em;
   }
+  .alert {
+    display: flex; align-items: flex-start; gap: 10px; margin: 8px 8px 0; padding: 10px 6px 10px 12px;
+    border-radius: 14px; background: #fff1d6; color: var(--warn); border: 1px solid #f0c77a;
+  }
+  .alert-body { flex: 1; font-weight: 700; }
+  .alert-body ul { margin: 4px 0 0; padding-left: 18px; font-weight: 500; font-size: .85rem; }
+  .alert .close { width: 36px; height: 36px; border-radius: 10px; font-size: 1.1rem; flex: none; }
+  .alert .close:active { background: #f6e2b8; }
   .banner small { display: block; font-weight: 500; font-size: .8rem; opacity: .9; letter-spacing: 0; }
   .was { color: var(--muted); font-weight: 500; }
   .tag.half { background: #fbe4e2; color: #d62828; }
@@ -226,6 +234,10 @@
 </header>
 
 <div class="wrap"><button class="banner" id="banner" hidden>🏷️ 50% OFF ALL BOOKS<small>Refreshments full price · tap to change</small></button></div>
+<div class="wrap"><div class="alert" id="feeAlert" role="alert" hidden>
+  <div class="alert-body">⚠ Card fee math failed its self-test. Double-check card totals by hand.<ul id="feeAlertList"></ul></div>
+  <button class="close" id="feeAlertClose" aria-label="Dismiss">✕</button>
+</div></div>
 <main class="wrap" id="rows"></main>
 
 <div class="bar">
@@ -419,10 +431,29 @@ function cartLines() {
 }
 // Same formula as last year's cc-calc.html: gross up the sale so that after the
 // processor takes its % + flat fee, the school still nets the full subtotal.
-function cardFee(subtotal) {
+function cardFee(subtotal, feePct = settings.feePct, feeFixed = settings.feeFixed) {
   if (subtotal <= 0) return 0;
-  const total = Math.round((subtotal + settings.feeFixed * 100) / (1 - settings.feePct / 100));
+  const total = Math.round((subtotal + feeFixed * 100) / (1 - feePct / 100));
   return total - subtotal;
+}
+// Sanity test carried over from cc-calc.html (cases copied from the original spreadsheet).
+// They assume the default 2.6% + $0.15 rates, so test against those, not the phone's settings.
+const TEST_SALE_CHARGE_PAIRS = [
+  ['1.00', '1.18'], ['5.00', '5.29'], ['10.00', '10.42'], ['15.00', '15.55'], ['20.00', '20.69'],
+  ['25.00', '25.82'], ['30.00', '30.95'], ['35.00', '36.09'], ['40.00', '41.22'], ['45.00', '46.36'],
+  ['50.00', '51.49'], ['55.00', '56.62'], ['60.00', '61.76'], ['65.00', '66.89'], ['70.00', '72.02'],
+  ['75.00', '77.16'], ['80.00', '82.29'], ['85.00', '87.42'], ['90.00', '92.56'], ['95.00', '97.69'],
+  ['100.00', '102.82'],
+];
+function testCardFee() {
+  const failures = [];
+  for (const [sale, charge] of TEST_SALE_CHARGE_PAIRS) {
+    const cents = Math.round(Number(sale) * 100);
+    const got = cents + cardFee(cents, DEFAULT_SETTINGS.feePct, DEFAULT_SETTINGS.feeFixed);
+    if (got !== Math.round(Number(charge) * 100)) failures.push(`${sale} → ${fmt(got)}, expected $${charge}`);
+  }
+  failures.forEach(f => console.error('cardFee test failed:', f));
+  return failures;
 }
 function totals() {
   const subtotal = cartLines().reduce((s, l) => s + l.line, 0);
@@ -811,6 +842,14 @@ $('exportCsv').onclick = () => {
 renderRows();
 render();
 syncPending();
+const feeFailures = testCardFee();
+if (feeFailures.length) {
+  const shown = feeFailures.slice(0, 3).map(esc);
+  if (feeFailures.length > 3) shown.push(`…and ${feeFailures.length - 3} more (see console)`);
+  $('feeAlertList').innerHTML = shown.map(f => `<li>${f}</li>`).join('');
+  $('feeAlert').hidden = false;
+}
+$('feeAlertClose').onclick = () => { $('feeAlert').hidden = true; };
 </script>
 </body>
 </html>
